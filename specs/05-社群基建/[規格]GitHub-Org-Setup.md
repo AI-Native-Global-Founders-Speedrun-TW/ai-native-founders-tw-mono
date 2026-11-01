@@ -48,7 +48,7 @@
 
 設定來源：[Member privileges](https://github.com/organizations/AI-Native-Founders-TW/settings/member_privileges)、[Members team 的 repository 權限](https://github.com/orgs/AI-Native-Founders-TW/teams/members/repositories)、[Members 的子 Teams](https://github.com/orgs/AI-Native-Founders-TW/teams/members/teams)。登入管理者才能看見的設定不以公開首頁推定。
 
-2026-11-01 API 補查：org 現址為 AI-Native-Global-Founders-Speedrun-TW，base permission 仍為 none；Members team 對 mono 已為 Triage（取代上表 Write 快照），Council parent 仍為 Members。mono 尚無 rulesets 或 main branch protection，Owner 僅 Johnny850807；App 自動化尚未配置。未重查的其他設定仍只代表上表日期。
+2026-11-01 API 補查：org 現址為 AI-Native-Global-Founders-Speedrun-TW，base permission 仍為 none；Members team 對 mono 已為 Triage（取代上表 Write 快照），Council parent 仍為 Members。mono 尚無 rulesets 或 main branch protection，Owner 僅 Johnny850807；當時 App 自動化尚未配置；後續建置狀態見下方。未重查的其他設定仍只代表上表日期。
 
 ## 審查通過後的 GitHub org 加入
 
@@ -78,7 +78,7 @@ GitHub 的一般 org 邀請需本人接受，未接受的邀請七天後失效�
 
 邀請使用經核對的 GitHub username；不在公開 comment 放私人 email、邀請憑證或其他敏感資料。GitHub 自動發送的系統邀請與人工另寄 email 分開處理。
 
-本規格保留人工審查與合併；合併後以 Python script、GitHub Actions 與 GitHub App 接續邀請及狀態核對。程式與 workflow 已在本地實作，尚未發布或啟用；啟用前沿用人工流程。權限不足不自動提高權限。
+本規格保留人工審查與合併；合併後以 Python script、GitHub Actions 與 GitHub App 接續邀請及狀態核對。程式與 workflow 已合併到 main；2026-11-01 已建立並安裝 App、配置 onboarding environment，首次 dry-run 成功取得 token 並讀取 PR。ONBOARDING_ENABLED 仍為 false，正式邀請及接受流程尚未驗證；啟用前沿用人工流程。權限不足不自動提高權限。
 
 
 ## 自動加入接續：Python script、GitHub Actions、GitHub App

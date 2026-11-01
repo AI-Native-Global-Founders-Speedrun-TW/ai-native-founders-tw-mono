@@ -14,7 +14,7 @@ adopted: true
 >
 > 那整體你覺得需要什麼基建來輔助嗎？
 
-## As-Is
+## As-Is（建置前觀察）
 
 2026-11-01 唯讀核對：本地 main 與 origin/main 一致；既有未提交內容保留。
 
@@ -39,7 +39,7 @@ adopted: true
 
 ## 工程摘要
 
-先實作 script 與 mock API 測試，再接 workflow；完成 main 保護及 App 環境設定後 dry-run，最後依有效授權實際驗證。細部設定只維護在平台規格；Python script、離線測試及 workflow 已在本地建立，平台配置尚未執行。
+先實作 script 與 mock API 測試，再接 workflow；App 環境設定後先執行唯讀連線測試；正式邀請驗證前另核對 main 保護、有效任職與啟用授權。細部設定只維護在平台規格；Python script、離線測試及 workflow 已在本地建立，App／environment 配置與首次唯讀測試已完成；main 保護、有效任職與正式啟用依後述條件核對，正式寫入保持停用。
 
 本地程式產物：`scripts/排程/入會權限處理/process_onboarding.py`（入會接續程式）、`scripts/排程/入會權限處理/test_process_onboarding.py`（入會接續測試）、`.github/workflows/sync-onboarding.yml`（入會接續工作流程）；必要依賴沿用現有 Python requirements。不新增通用工作流框架。
 
@@ -55,7 +55,7 @@ adopted: true
 - [Onboard Role](../../specs/02-R&R/[Role]Onboard-篩選與加入接續.md)：一般查詢由自動化執行，Leader 接續例外。對應 [GitHub 的權限設計還可以更精確](#github-的權限設計還可以更精確)。
 - [Repository Role](../../specs/02-R&R/[Role]基建-Repository維護.md)：維護 App、Actions、私鑰及故障接續。對應 [GitHub 的權限設計還可以更精確](#github-的權限設計還可以更精確)。
 
-## 驗收：待實作後執行
+## 正式啟用驗收：留待下一筆入會申請
 
 - [ ] 一般新申請有效核准且合併後送出 Member 邀請；無有效審查、未合併、其他 PR、歷史及不適用案件不自動邀請。
 - [ ] 已有 pending 或 active 不重送；本人接受後下輪查詢更新原 PR，沒有重複歡迎。
@@ -67,9 +67,13 @@ adopted: true
 
 ## 進度與限制
 
-方案已採納；script 與 workflow 已在本地實作。未建立 App／Secrets／ruleset、未部署、未發邀請。本 Plan adopted 為 true，表示使用者已明確採納方案，不表示實作或部署完成。Chris 仍未任命；目前有效 Onboard 任職、Repository code owner 帳號、bypass 與有效啟用決定均須在部署前核對，不以規劃完成代替。
+本次建置結束：程式與規格已由 [入會權限處理 PR](https://github.com/AI-Native-Global-Founders-Speedrun-TW/ai-native-founders-tw-mono/pull/12) 合併。App 已安裝到 mono，environment 的 Secret 與變數已設定，部署範圍只允許 main 分支；ONBOARDING_ENABLED 保持 false。此結案不表示正式邀請流程已驗收或已啟用。
 
-本輪需文件獨立 review；尚未宣稱整 Plan Auto-sync 檢驗通過或工程就緒。
+[首次 dry-run](https://github.com/AI-Native-Global-Founders-Speedrun-TW/ai-native-founders-tw-mono/actions/runs/41302033398) 成功取得 App installation token 並讀取 PR。本輪只有基建 PR，因不是單人初次自介而轉人工；沒有發送邀請或更新 PR 留言。尚未走到有效申請的審查判斷、org membership／invitations 查詢及真實邀請接受流程。
+
+後續在下一筆入會申請合併時，由 Onboard 與 Repository 職責接續：先依 [GitHub 啟用規格](../../specs/05-社群基建/[規格]GitHub-Org-Setup.md#啟用與停用) 核對有效任職、main 保護及啟用決定，再跑 dry-run；符合 would-invite 後才依授權啟用並驗證發送及接受。前述未勾選的正式啟用驗收保留，不能以本次建置結束代替。部署前紀錄中的職位空缺與平台保護狀態須重新核對，不把舊觀察當成目前事實。
+
+以下各階段審查與測試均為當時紀錄；目前狀態以本節為準。
 
 ## 規劃階段文件審查與憲法檢查
 
@@ -166,3 +170,8 @@ adopted: true
 ### 發 PR 前最終檢查（2026-11-01）
 
 使用者要求最後 review、確認後 commit 並發 PR，並提供 GitHub App 設定方式。本輪在獨立 worktree 檢查實際程式、workflow、規格與引用；34 項模擬 API／資料測試、分工驗證、actionlint 與 diff 檢查通過。獨立 reviewer 的 FORMULATION 與程式檢查無阻擋，憲法逐條檢查十二條均沒有違反，前述逐條結論仍適用。Python 快取已排除版控。未配置 App、未發送真實邀請、未啟用排程寫入；Onboard Leader 及正式啟用條件仍待確認。
+
+
+### 結束建置的文件檢查
+
+獨立 FORMULATION review 通過；已限縮完成範圍為 App／environment 與唯讀連線測試，不表示 main 保護或正式啟用已完成。憲法逐條檢查：第 1 條（名稱與目的）、第 2 條（公益非商業）、第 3 條（效力制度分工）、第 4 條（開放成員資格）、第 5 條（自願參與義務）、第 6 條（分工議會組成）、第 7 條（決策任命範圍）、第 8 條（平等有效表決）、第 9 條（罷免職位替換）、第 10 條（異議資格保障）、第 11 條（利益緊急界線）、第 12 條（修憲成員監督）均沒有違反；未新增任命、啟用授權或公開憑證。
