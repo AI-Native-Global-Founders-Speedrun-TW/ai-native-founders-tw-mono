@@ -2,7 +2,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from validate_assignments import validate
+from scripts.驗證.分工資料.validate import validate
 
 
 class ValidationTests(unittest.TestCase):

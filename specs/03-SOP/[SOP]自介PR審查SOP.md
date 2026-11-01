@@ -56,11 +56,11 @@
    - 需要補充：發布下方「待補充 comment」，可用 Request changes 表達需修正內容，保持 PR 開啟；等待本人修改後重新核對，不排定定期催辦或逾期關閉。
    - 有具體且影響資格的未解決異議：維持待審，交非涉案覆核人釐清並記錄結果；不能因有人 Approve 就繼續合併或邀請。無具體依據的反對依共同制度處理，不構成無限否決。
    - 明確違反原則：由有審查權限的人員正式裁決，發布「正式未通過 comment」，再由有權限的人關閉 PR；不合併或發送 org 邀請。回讀確認已關閉，若無關閉權限則交接並如實記錄。
-   - 全部符合且無未解決異議：由有審查權限的人員提交 Approve 與「正式通過 comment」，記錄審查版本。申請者不是自己的審查人。
+   - 全部符合且無未解決異議：由有審查權限的人員提交 Approve，將下方「正式通過 comment」文案放在該 review 正文，記錄審查版本與未解決異議已核對結果；不必另貼同內容 comment。申請者不是自己的審查人。
 4. 正式通過後，由有合併權限的人核對最新內容、有效核准、具體且影響資格的未解決異議、衝突及平台要求。依[編號配置與合併](<../01-制度/[規格]成員識別與資料.md#編號配置與合併>)核對最新 main 及歷史編號，依序配置候選編號，更新正式檔名與正文，並同步所有受影響連結；合併前若其他配置先合併，重新計算，不只看文字衝突。核對個人成員檔案的編號、帳號及 assignment 連結；正式審查結果留在本 PR，不在自介新增資格欄位。一般申請須有效審查通過並合併才生效，時間直接讀 GitHub 的合併紀錄；既有資格依過渡規則保留。若因此新增 commit，重新核對受影響內容並確認核准適用於最終版本，再合併。平台阻擋、衝突或合併失敗時保留已通過結果，回報尚未合併的原因，不繞過檢查或宣稱已合併。
-5. 回讀確認 PR 已合併，再由 org Owner 依 [GitHub org 加入規格](<../05-社群基建/[規格]GitHub-Org-Setup.md#審查通過後的-github-org-加入>)執行：核對 username 與既有 Members／Invitations，選 **Member**，不勾選 Members、Council 或其他 Team，送出邀請並確認 pending invitation。已是 org Member 時不重送；既有 Team／權限不由此流程移除。邀請失敗時記錄實際原因與接手人，不把 PR 合併當作加入完成。
-6. 送出邀請後發布下方「邀請已送出 comment」。本人回覆接受、詢問加入狀態或需要接續未完成案件時，再查看 GitHub People／Invitations 的實際狀態；確認已加入才發布「歡迎正式加入 GitHub org comment」。不因沒有回覆自動撤回已通過結果或另設定期催辦。
-7. 邀請失效時，先重新核對帳號、通過紀錄與現有邀請；本人仍要加入且尚未是 org Member 時，由 org Owner 重送 Member 邀請。操作失敗或等待本人處理平台驗證時使用「邀請未完成 comment」，記明誰接續及需要完成什麼。平台接受條件不追加為組織能力或背景門檻。
+5. 回讀確認 PR 已合併。自動化已啟用且符合[自動加入接續](<../05-社群基建/[規格]GitHub-Org-Setup.md#自動加入接續python-scriptgithub-actionsgithub-app>)範圍時，由 script 查詢、發 Member 邀請及更新原 PR，不另外勾 checklist。未啟用、不適用或需人工處理時，由有權者依同份規格核對帳號及既有 Members／Invitations，再由 Owner 邀請；不加入任何 Team，不改其他既有權限。
+6. 自動化定時核對是否已加入，使用下方文案更新同一則 App 進度 comment，不要求本人回覆才能完成。人工流程則在本人回覆或接續時查 GitHub 實際狀態；只有確認 active 才歡迎。不因沒有回覆撤回資格；定期查詢平台不是定期催辦申請者。
+7. 邀請過期或取消不自動重送。Onboard 在原 PR 核對本人仍想加入、帳號與資格依據後，交 Owner 重送；資格異動、備援審查或資料不明依制度人工處理。技術故障交 Repository，不把 job 失敗當成自介未通過。接手前先查平台與 App comment，避免和 job 重複邀請；需要人工發送時先停用寫入 job，完成後核對再恢復。
 
 每次接手先看既有 PR comments 與 GitHub 實際狀態；不重複留言、合併或發邀請。先前留言的狀態有變時，補一則具體進度或更新原有狀態說明，保留正式審查結果的依據。尚未完成的步驟及接手人留在該 PR，不另建立第二份成員資格來源。
 
@@ -100,9 +100,9 @@
 
 ### 邀請已送出 comment
 
-> 已向 `<GitHub username>` 送出 AI-Native-Founders-TW 的 Member 邀請，請登入該帳號接受：[organization 入口](https://github.com/AI-Native-Founders-TW)。
+> 已向 `<GitHub username>` 送出 AI-Native-Global-Founders-Speedrun-TW 的 Member 邀請，請登入該帳號接受：[organization 入口](https://github.com/AI-Native-Global-Founders-Speedrun-TW)。
 >
-> 目前還在等待你接受，尚未完成平台加入。接受後可在這個 PR 回覆，方便核對。這次不加入 Members team，也不授予 mono repo 的 Write；後續請繼續用 Fork／PR 協作。
+> 目前還在等待你接受，尚未完成平台加入。自動化啟用時會定時核對接受結果，不必另行回覆；遇到問題可在這個 PR 回覆。這次不加入 Members team，也不授予 mono repo 的 Write；後續請繼續用 Fork／PR 協作。
 >
 > 邀請七天後會失效；若已失效或遇到問題，請在此回覆，我們核對後接續處理。
 
@@ -112,7 +112,7 @@
 
 > 🎉 歡迎你，`<本人稱呼>`！很高興你加入 AI-Native Global Founders Speedrun Taiwan，和大家一起學習、分享與協作！
 >
-> 你的自介 PR 已通過審查並合併，我們也已確認你的 GitHub 帳號 `<GitHub username>` 成為 [AI-Native-Founders-TW](https://github.com/AI-Native-Founders-TW) 的 org Member。GitHub 的加入手續已完成，不需要再接受另一封邀請。
+> 你的自介 PR 已通過審查並合併，我們也已確認你的 GitHub 帳號 `<GitHub username>` 成為 [AI-Native-Global-Founders-Speedrun-TW](https://github.com/AI-Native-Global-Founders-Speedrun-TW) 的 org Member。GitHub 的加入手續已完成，不需要再接受另一封邀請。
 >
 > 謝謝你花時間介紹自己，也讓大家知道你想分享什麼、可以幫什麼忙，以及想參與的 Contributions。你的[自我介紹](<已合併的自介連結>)與 [R&R assignment](<本人 assignment 連結>)已經留下來，大家可以從這裡認識你、找到一起合作的機會。
 >

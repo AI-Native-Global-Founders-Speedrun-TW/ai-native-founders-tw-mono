@@ -123,7 +123,7 @@ def validate(root):
 
 if __name__ == '__main__':
     try:
-        counts = validate(Path(__file__).resolve().parents[1])
+        counts = validate(Path(__file__).resolve().parents[3])
     except (ValueError, OSError, yaml.YAMLError) as error:
         print(f'驗證失敗: {error}', file=sys.stderr)
         sys.exit(1)

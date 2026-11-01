@@ -9,6 +9,6 @@
 | 文件 | 主要資料 |
 |---|---|
 | [Discord 社群 Setup](<[規格]Discord-社群-Setup.md>) | 加入、交流、號召工作與活動的 Problem，以及頻道、權限、安全設定、新人導覽與邀請規格。 |
-| [GitHub org Setup](<[規格]GitHub-Org-Setup.md>) | org Member、Team 與 repository 權限的區分、平台設定及成員資格與邀請狀態的接合。 |
+| [GitHub org Setup](<[規格]GitHub-Org-Setup.md>) | org Member、Team 與 repository 權限的區分、平台設定、Python script／Actions／GitHub App 的加入接續，以及成員資格與邀請狀態的接合。 |
 
 規格與實際平台狀態分開確認；文件存在不代表設定或成員加入已完成。歷史觀察依各文件標示的日期理解。

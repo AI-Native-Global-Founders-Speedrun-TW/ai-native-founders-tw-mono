@@ -33,7 +33,7 @@
 #             本人接受及生效依據。格式正確不表示已任職；pending 檔名不裁定資格。
 #   participation: 每位正式成員至少自行選一項 Contributors，Leader 也一樣；
 #                  不從 leader 自動補入 contributors，不把選擇分工當成承接所有工作。
-#   method: python scripts/validate_assignments.py；PR 與 main CI 執行相同驗證及測試。
+#   method: python -m scripts.驗證.分工資料.validate；PR 與 main CI 執行相同驗證及測試。
 #           程式檢查語法、欄位、引用與重複；資格、本人接受及任命效力仍由人核對。
 #
 # discord_mapping: leader 路徑 → 個人成員檔案「成員資料」的選填 discord_id。

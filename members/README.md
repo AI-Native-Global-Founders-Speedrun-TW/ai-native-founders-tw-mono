@@ -114,4 +114,4 @@ discord_id: null
 
 ## 執行資料驗證
 
-在 repo 根目錄安裝 `python -m pip install -r scripts/requirements-validation.txt`，再執行 `python scripts/validate_assignments.py`。測試使用 `python -m unittest discover -s scripts -p 'test_validate_assignments.py'`。PR CI 執行相同指令，失敗時依錯誤修正格式或引用；不可為了通過而清空既有 Leader。檢查範圍與限制見[自動資料驗證](<../specs/01-制度/[規格]成員識別與資料.md#自動資料驗證>)。
+在 repo 根目錄安裝 `python -m pip install -r scripts/requirements.txt`，再執行 `python -m scripts.驗證.分工資料.validate`。測試使用 `python -m unittest discover -s scripts/驗證/分工資料 -t . -p 'test_*.py'`。PR CI 執行相同指令，失敗時依錯誤修正格式或引用；不可為了通過而清空既有 Leader。檢查範圍與限制見[自動資料驗證](<../specs/01-制度/[規格]成員識別與資料.md#自動資料驗證>)。
