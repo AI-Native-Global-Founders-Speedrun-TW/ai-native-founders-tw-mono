@@ -59,7 +59,7 @@
 
 ### Leader
 
-待確認
+[Sun（謝上智）](pending-sunzhi-will.md)
 
 ### Contributors
 
