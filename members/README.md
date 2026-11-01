@@ -94,3 +94,14 @@ assignment YAML 每項 R&R 一筆 role、leader 與 contributors。新增自己�
 直接讀 [assignment YAML](r-and-r-assignment.yml)，各 role 的非空 leader 去重後就是 Council；兼任多項職責仍只算一人。不另外手填或產生 Council 名單。
 
 檔頭註解包含格式、欄位、範例與驗證方式。職責定義見 [R&R 入口](../specs/02-R&R/README.md)，各 Role 的人員入口指向同一份 YAML，以 role 名稱查找。任命及本人接受依據留在原 PR／Issue；leader 為 null 不表示已裁定無人具資格。詳細規則依[成員識別與資料](<../specs/01-制度/[規格]成員識別與資料.md#council-名單與維護>)。
+
+
+## Discord 帳號對應
+
+可在個人成員檔案的「成員資料」補上選填欄位；未核對時可不填，或寫：
+
+```yaml
+discord_id: null
+```
+
+本人確認後將 null 換成以引號包住的 Discord 使用者 ID 字串。填寫與核對規則見[Discord 帳號對應](<../specs/01-制度/[規格]成員識別與資料.md#discord-帳號對應>)。Council mapping 由 assignment 的 leader 找到個人檔案，再讀取 discord_id，不在各職位重抄。不知道 ID 時不用猜，也不影響入會或任職資格。
