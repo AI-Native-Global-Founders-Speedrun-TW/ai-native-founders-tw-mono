@@ -1,4 +1,4 @@
-# GitHub setup 決策
+# 自介審查通過後自動處理 GitHub 入會權限 決策
 
 ## 2026-11-01：水球採用 Python script、GitHub Actions 與 GitHub App
 
@@ -31,3 +31,7 @@
 水球原話：「好，直接跑 dry-run 驗證一下，先保持 ONBOARDING_ENABLED=false」「還是等其他 members 要合併時再來測試？」「ok 那本地還有什麼相關檔案還沒 commit 嗎」「不然這 plan 就要結束了」。
 
 本次建置收尾；保持 false，下一筆入會申請合併後再執行適用案件的 dry-run，正式邀請與接受流程尚未驗證。不是現在啟用，也不把未執行的驗收勾成完成。
+
+## 2026-11-01：Plan 名稱表達意圖
+
+水球原話：「plan 不要叫 github setup，把意圖講清楚」。Plan 改名為「自介審查通過後自動處理 GitHub 入會權限」，同步目錄與索引；原始需求引用保留原話。
