@@ -59,7 +59,7 @@
 
 ### Leader
 
-[Sun（謝上智）](pending-sunzhi-will.md)（Johnny 已指定、本人已接受，待首屆共同生效）
+[Sun（謝上智）](pending-sunzhi-will.md)（本人已接受，待首屆共同生效）
 
 ### Contributors
 
