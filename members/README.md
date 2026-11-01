@@ -105,3 +105,8 @@ discord_id: null
 ```
 
 本人確認後將 null 換成以引號包住的 Discord 使用者 ID 字串。填寫與核對規則見[Discord 帳號對應](<../specs/01-制度/[規格]成員識別與資料.md#discord-帳號對應>)。Council mapping 由 assignment 的 leader 找到個人檔案，再讀取 discord_id，不在各職位重抄。不知道 ID 時不用猜，也不影響入會或任職資格。
+
+
+## 執行資料驗證
+
+在 repo 根目錄安裝 `python -m pip install -r scripts/requirements-validation.txt`，再執行 `python scripts/validate_assignments.py`。測試使用 `python -m unittest discover -s scripts -p 'test_validate_assignments.py'`。PR CI 執行相同指令，失敗時依錯誤修正格式或引用；不可為了通過而清空既有 Leader。檢查範圍與限制見[自動資料驗證](<../specs/01-制度/[規格]成員識別與資料.md#自動資料驗證>)。
