@@ -1,6 +1,11 @@
 # Yapi（吳子楊）
 
-![Yapi（吳子楊）的照片](assets/yayapipi.jpg)
+![Yapi（吳子楊）的真人照片](assets/000006-Yapi-半身照.jpg)
+
+## 成員資料
+
+Member ID：000006
+GitHub：[yayapipi](https://github.com/yayapipi)
 
 ## 我是誰
 
@@ -10,9 +15,7 @@
 
 日常以 AI-Native 方式經營公司：用一組 AI agent 分擔 PM、CMO、CFO、CTO、客服等角色，開發主要靠 Claude Code 與 Codex。11/12 會參加 YC Startup School Taipei。
 
-Member ID：6
-GitHub：yayapipi
-連結：https://larch.ink
+其他聯絡方式或作品連結：https://larch.ink
 
 ## 為什麼想加入
 
