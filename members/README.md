@@ -104,7 +104,7 @@ assignment YAML 每項 R&R 一筆 role、leader 與 contributors。新增自己�
 discord_id: null
 ```
 
-本人確認後將 null 換成以引號包住的 Discord 使用者 ID 字串。填寫與核對規則見[Discord 帳號對應](<../specs/01-制度/[規格]成員識別與資料.md#discord-帳號對應>)。Council mapping 由 assignment 的 leader 找到個人檔案，再讀取 discord_id，不在各職位重抄。不知道 ID 時不用猜，也不影響入會或任職資格。
+取得本人或資料維護者明確提供的帳號對應後，可將 null 換成以引號包住的 Discord 使用者 ID 字串；來源留原 PR／Issue，登錄不代替操作前的本人核對。填寫與核對規則見[Discord 帳號對應](<../specs/01-制度/[規格]成員識別與資料.md#discord-帳號對應>)。Council mapping 由 assignment 的 leader 找到個人檔案，再讀取 discord_id，不在各職位重抄。不知道 ID 時不用猜，也不影響入會或任職資格。
 
 
 ## 執行資料驗證

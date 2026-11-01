@@ -7,6 +7,10 @@
 Member ID：000005
 GitHub：[ping-yee](https://github.com/ping-yee)
 
+```yaml
+discord_id: "693159140297670727"
+```
+
 ## 我是誰
 
 我目前負責水球球特務有限公司 B2B 事業體的建立與成長，並擔任多間企業的企業顧問與內訓講師。
