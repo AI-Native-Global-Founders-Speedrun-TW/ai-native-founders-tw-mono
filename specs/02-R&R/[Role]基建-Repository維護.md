@@ -42,3 +42,7 @@ GitHub org、Repository 與 Discord 的技術設定、權限維護、事故處�
 ## 尚未訂定與執行限制
 
 實際平台帳號、可接續的第二位有效 Leader、恢復途徑與能力驗證仍須逐平台完成；新專案接入 SOP 與一般定期核對週期尚未訂定。
+
+## GitHub 入會自動化維護
+
+依[GitHub org Setup](<../05-社群基建/[規格]GitHub-Org-Setup.md#自動加入接續python-scriptgithub-actionsgithub-app>)維護 Python script、Actions、GitHub App 與環境 Secrets，處理失敗、私鑰輪替、排程停用及交接。只接續已有效成立的審查與權限決定，不代替 Onboard 裁決；未有有效啟用依據及平台驗證時不得宣稱已運作。
