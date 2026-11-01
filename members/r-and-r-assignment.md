@@ -75,11 +75,12 @@
 
 ### Leader
 
-待確認
+[品毅](000005-ping-yee.md)（Member ID：000005；本人已確認接受，任命及生效依據待核對）
 
 ### Contributors
 
 - [水球](000000-johnny850807-水球潘.md)（Member ID：000000）
+- [品毅](000005-ping-yee.md)（Member ID：000005）
 
 <a id="vc"></a>
 
