@@ -1,5 +1,7 @@
 # R&R assignment
 
+Council 核對截止：2026-11-01T14:50:00+08:00
+
 每個 R&R 的 Leader 與 Contributors 依[成員參與制度](<../specs/01-制度/[機制] 憲政制度.md#rr-assignment>)維護。每位成員至少自行選一個 R&R 當 Contributors，可選多個；Contributions 留在個人自介。
 
 各 R&R 的責任、routine、non-routine 與 SOP 引用由 [R&R package](<../specs/02-R&R/README.md>) 維護；本文件只維護人員 assignment，不另存責任範圍。
@@ -60,7 +62,15 @@
 
 ### Leader
 
-[Sun（謝上智）](pending-sunzhi-will.md)
+- 人員：[Sun（謝上智）](pending-sunzhi-will.md)
+- 決定依據：[Sun Leader 安排](https://github.com/AI-Native-Global-Founders-Speedrun-TW/ai-native-founders-tw-mono/pull/9)；[首次建立與首屆任命](../plans/001-Kickoff/plan.md#首次建立與首屆任命)
+- 本人接受：[Sun 本人接受說明](https://github.com/AI-Native-Global-Founders-Speedrun-TW/ai-native-founders-tw-mono/pull/8)
+- 生效條件：已列活動 Leader；原申請說明尚缺公開任命及共同生效依據；需依首次安排核對完整名單、資格條件及共同時間
+- 生效時間：未定
+- 核對截止：2026-11-01T14:50:00+08:00
+- 本次核對：AI 來源整理，非資格裁決；[本輪來源盤點](../plans/004-dc-infra/plan.md#本輪任職來源核對)；遠端 dadc191（品毅自介合併）及上述原案，未取得全體共同生效證據
+- 核對結果：依據待核對
+- 尚未完成：補齊有效資格、任命與共同生效來源；沿 [首次建立與首屆任命](../plans/001-Kickoff/plan.md#首次建立與首屆任命) 接續，真人承接尚未確認
 
 ### Contributors
 
@@ -75,7 +85,15 @@
 
 ### Leader
 
-[品毅](000005-ping-yee.md)（Member ID：000005；本人已確認接受，任命及生效依據待核對）
+- 人員：[品毅](000005-ping-yee.md)
+- 決定依據：[品毅申請與合併](https://github.com/AI-Native-Global-Founders-Speedrun-TW/ai-native-founders-tw-mono/pull/5)；[首次建立與首屆任命](../plans/001-Kickoff/plan.md#首次建立與首屆任命)
+- 本人接受：[合併後 assignment 本人接受記載](https://github.com/AI-Native-Global-Founders-Speedrun-TW/ai-native-founders-tw-mono/blob/dadc191085ffdb2f23a993233953f0d0c4e678b8/members/r-and-r-assignment.md#基建-repository-維護)
+- 生效條件：已記本人接受；有效任命及生效依據仍待核對；需依首次安排核對完整名單、資格條件及共同時間
+- 生效時間：未定
+- 核對截止：2026-11-01T14:50:00+08:00
+- 本次核對：AI 來源整理，非資格裁決；[本輪來源盤點](../plans/004-dc-infra/plan.md#本輪任職來源核對)；遠端 dadc191（品毅自介合併）及上述原案，未取得全體共同生效證據
+- 核對結果：依據待核對
+- 尚未完成：補齊有效資格、任命與共同生效來源；沿 [首次建立與首屆任命](../plans/001-Kickoff/plan.md#首次建立與首屆任命) 接續，真人承接尚未確認
 
 ### Contributors
 
@@ -104,7 +122,15 @@
 
 ### Leader
 
-[水球](000000-johnny850807-水球潘.md)（本人已指定並接受，待首屆共同生效）
+- 人員：[水球](000000-johnny850807-水球潘.md)
+- 決定依據：[本人指定安排](https://github.com/AI-Native-Global-Founders-Speedrun-TW/ai-native-founders-tw-mono/pull/7)；[首次建立與首屆任命](../plans/001-Kickoff/plan.md#首次建立與首屆任命)
+- 本人接受：[本人接受記載](https://github.com/AI-Native-Global-Founders-Speedrun-TW/ai-native-founders-tw-mono/pull/7)
+- 生效條件：原案記載待首屆共同生效；不由本次資料整理代替；需依首次安排核對完整名單、資格條件及共同時間
+- 生效時間：未定
+- 核對截止：2026-11-01T14:50:00+08:00
+- 本次核對：AI 來源整理，非資格裁決；[本輪來源盤點](../plans/004-dc-infra/plan.md#本輪任職來源核對)；遠端 dadc191（品毅自介合併）及上述原案，未取得全體共同生效證據
+- 核對結果：依據待核對
+- 尚未完成：補齊有效資格、任命與共同生效來源；沿 [首次建立與首屆任命](../plans/001-Kickoff/plan.md#首次建立與首屆任命) 接續，真人承接尚未確認
 
 ### Contributors
 
@@ -161,7 +187,15 @@
 
 ### Leader
 
-[水球](000000-johnny850807-水球潘.md)（本人已指定並接受，待首屆共同生效）
+- 人員：[水球](000000-johnny850807-水球潘.md)
+- 決定依據：[本人指定安排](https://github.com/AI-Native-Global-Founders-Speedrun-TW/ai-native-founders-tw-mono/pull/7)；[首次建立與首屆任命](../plans/001-Kickoff/plan.md#首次建立與首屆任命)
+- 本人接受：[本人接受記載](https://github.com/AI-Native-Global-Founders-Speedrun-TW/ai-native-founders-tw-mono/pull/7)
+- 生效條件：原案記載待首屆共同生效；不由本次資料整理代替；需依首次安排核對完整名單、資格條件及共同時間
+- 生效時間：未定
+- 核對截止：2026-11-01T14:50:00+08:00
+- 本次核對：AI 來源整理，非資格裁決；[本輪來源盤點](../plans/004-dc-infra/plan.md#本輪任職來源核對)；遠端 dadc191（品毅自介合併）及上述原案，未取得全體共同生效證據
+- 核對結果：依據待核對
+- 尚未完成：補齊有效資格、任命與共同生效來源；沿 [首次建立與首屆任命](../plans/001-Kickoff/plan.md#首次建立與首屆任命) 接續，真人承接尚未確認
 
 ### Contributors
 
@@ -170,6 +204,8 @@
 各 R&R 文件中的尚未訂定事項不因有人加入 assignment 而成為已採納規則；實際安排依 specs。Leader 待確認的項目尚未完成決策分工。
 
 ## 填寫方式
+
+Council 閱讀入口為 [Council 名單與分工](council.md)，由本檔產生。Leader 固定欄位及核對規則依[成員識別與資料](<../specs/01-制度/[規格]成員識別與資料.md#council-名單與維護>)；修改後執行 `python3 scripts/render_council.py`，再執行 `python3 scripts/render_council.py --check`。共同核對截止由人明確指定，不能為通過 CI 改成今天或補造核對結果。
 
 每項 R&R 獨立一節；Leader 與 Contributors 分開記錄，每位 Contributor 獨立一行。新增自己時保留其他人的行與順序，不重新排序整份文件，以縮小 git diff 與合併衝突的範圍。
 

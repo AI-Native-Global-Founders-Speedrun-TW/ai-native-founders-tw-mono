@@ -122,5 +122,7 @@
 | [Specs](specs/README.md) | 現行規格及各 package |
 | [Plans](plans/README.md) | 進行中的計畫與變更脈絡 |
 | [Logs](logs/) | 累積的會議及執行記錄 |
+| [Council 名單與分工](members/council.md) | 依原案核對的 Leader 檢視、來源與未完成安排 |
+| [Council 表工具](scripts/README.md) | 產生及只讀檢查的操作入口 |
 | [Members](members/README.md) | 自介提交、成員資料與分工入口 |
 | [Modules](modules/README.md) | Git submodules 與本機操作入口 |
