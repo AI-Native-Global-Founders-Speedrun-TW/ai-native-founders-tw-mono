@@ -43,6 +43,25 @@ def member_path(root, value):
     return target
 
 
+def yaml_blocks(section, filename):
+    fence = None
+    language = None
+    lines = []
+    for line in section.splitlines():
+        if fence is None:
+            opening = re.fullmatch(r' {0,3}(`{3,}|~{3,})[ \t]*(.*)', line)
+            if opening:
+                fence, language = opening.groups()
+                lines = []
+        elif re.fullmatch(r' {0,3}' + re.escape(fence[0]) + '{' + str(len(fence)) + r',}[ \t]*', line):
+            if language.strip() in ('yaml', 'yml'):
+                yield '\n'.join(lines)
+            fence = None
+        else:
+            lines.append(line)
+    require(fence is None, f'{filename}: 成員資料 code block 未關閉')
+
+
 def validate(root):
     root = Path(root)
     data = yaml.load((root / 'members/r-and-r-assignment.yml').read_text(), Loader=UniqueLoader)
@@ -80,11 +99,13 @@ def validate(root):
     for path in sorted((root / 'members').glob('*.md')):
         if path.name.lower() == 'readme.md':
             continue
-        section = re.search(r'^## 成員資料\s*\n(.*?)(?=^## |\Z)', path.read_text(), re.M | re.S)
-        if not section:
+        sections = re.findall(r'^## 成員資料[ \t]*\n(.*?)(?=^## |\Z)', path.read_text(), re.M | re.S)
+        require(len(sections) <= 1, f'{path.name}: 成員資料章節重複')
+        if not sections:
             continue
+        section = sections[0]
         found = False
-        for block in re.findall(r'^```ya?ml\s*\n(.*?)^```\s*$', section[1], re.M | re.S):
+        for block in yaml_blocks(section, path.name):
             fields = yaml.load(block, Loader=UniqueLoader)
             if not isinstance(fields, dict) or 'discord_id' not in fields:
                 continue

@@ -87,6 +87,35 @@ class ValidationTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             validate(self.root)
 
+    def test_unclosed_member_fence(self):
+        p = self.root / 'members/alice.md'
+        p.write_text('# Person\n## 成員資料\n```yaml\ndiscord_id: 123\n')
+        with self.assertRaisesRegex(ValueError, '未關閉'):
+            validate(self.root)
+
+    def test_duplicate_member_section(self):
+        self.member('alice', '"123"')
+        p = self.root / 'members/alice.md'
+        p.write_text(p.read_text() + '\n## 成員資料\n```yaml\ndiscord_id: "456"\n```\n')
+        with self.assertRaisesRegex(ValueError, '章節重複'):
+            validate(self.root)
+
+    def test_markdown_fence_variants(self):
+        for fence in ['````', '~~~', '~~~~']:
+            with self.subTest(fence=fence):
+                p = self.root / 'members/alice.md'
+                p.write_text(f'# Person\n## 成員資料\n{fence}yaml\ndiscord_id: false\n{fence}\n')
+                with self.assertRaisesRegex(ValueError, '數字字串'):
+                    validate(self.root)
+                p.write_text(f'# Person\n## 成員資料\n{fence}yml\ndiscord_id: "123"\n{fence}\n')
+                self.assertEqual(validate(self.root)[2], 1)
+
+    def test_mismatched_fence(self):
+        p = self.root / 'members/alice.md'
+        p.write_text('# Person\n## 成員資料\n````yaml\ndiscord_id: "123"\n```\n')
+        with self.assertRaisesRegex(ValueError, '未關閉'):
+            validate(self.root)
+
 
 if __name__ == '__main__':
     unittest.main()
