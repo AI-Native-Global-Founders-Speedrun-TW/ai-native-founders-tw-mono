@@ -1,10 +1,10 @@
 # Sun（謝上智）
 
-![Sun（謝上智）的真人照片](assets/pending-sunzhi-will-Sun-半身照.jpg)
+![Sun（謝上智）的真人照片](assets/000004-Sun-半身照.jpg)
 
 ## 成員資料
 
-Member ID：待配置
+Member ID：000004
 
 GitHub：SunZhi-Will
 

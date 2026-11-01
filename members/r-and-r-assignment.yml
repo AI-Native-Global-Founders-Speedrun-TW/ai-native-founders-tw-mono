@@ -54,7 +54,7 @@ assignments:
   leader: null
   contributors:
   - members/000000-johnny850807-水球潘.md
-  - members/pending-sunzhi-will.md
+  - members/000004-sunzhi-will.md
 - role: Networking／宣傳、自媒體（Threads／IG）
   leader: null
   contributors:
@@ -65,10 +65,10 @@ assignments:
   contributors:
   - members/000000-johnny850807-水球潘.md
 - role: 活動籌辦與協助
-  leader: members/pending-sunzhi-will.md
+  leader: members/000004-sunzhi-will.md
   contributors:
   - members/000000-johnny850807-水球潘.md
-  - members/pending-sunzhi-will.md
+  - members/000004-sunzhi-will.md
 - role: 基建-Repository 維護
   leader: members/000005-ping-yee.md
   contributors:
