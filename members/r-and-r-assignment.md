@@ -36,6 +36,7 @@
 ### Contributors
 
 - [水球](000000-johnny850807-水球潘.md)（Member ID：000000）
+- [Yapi（吳子楊）](000006-yayapipi-Yapi.md)（Member ID：000006）
 
 <a id="onboard"></a>
 
@@ -135,6 +136,7 @@
 ### Contributors
 
 - [水球](000000-johnny850807-水球潘.md)（Member ID：000000）
+- [Yapi（吳子楊）](000006-yayapipi-Yapi.md)（Member ID：000006）
 
 <a id="copywriting"></a>
 
