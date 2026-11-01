@@ -1,0 +1,95 @@
+# =============================================================================
+# R&R assignment — 格式、欄位與驗證規範
+# =============================================================================
+# purpose: 唯一的人員分工資料；每項 R&R 同時列出 Leader 與 Contributors。
+# Verify note：Council 必須至少擔任一項有效的 R&R Leader。
+# council: 所有非 null leader 依個人成員路徑去重；不另外手填或產生 Council 名單。
+#
+# structure:
+#   root: mapping，只允許必填的 assignments。
+#   assignments: sequence，列出全部現行 R&R；每項 role 恰好一筆。
+#   assignments[]: mapping，只允許 role、leader、contributors；三者皆必填。
+#   role: 非空 string；沿用 specs/02-R&R/README.md 文件入口的 R&R 名稱。
+#   leader: 個人成員路徑 string 或 null；不得用空字串、清單或省略欄位。
+#   contributors: 個人成員路徑 string 的 sequence；無人時寫 []，不得為 null。
+#   member_path: repo 根起算的 members/ 下現有個人成員 Markdown 路徑；
+#                不用 URL、絕對路徑或 ..；同一人一份檔案，不重抄姓名或 Member ID。
+#
+# example: 以下是假設格式，不是真實任命。
+#   assignments:
+#     - role: Hacker
+#       leader: null
+#       contributors:
+#         - members/example.md
+#
+# validation:
+#   syntax: 單一 YAML 文件，空格縮排，不用 Tab，不允許重複 key。
+#   fields: 檢查所有必填 key、上述型別與非空限制，不加狀態、日期或證據欄位。
+#   roles: 與既有 R&R 入口逐項對照，不漏列、不重複、不新增未成立職責。
+#   people: 每個路徑存在且對應本人；同一 role 的 contributors 不重複。
+#           同一人可出現在多項 role，也可同時為 Leader 與 Contributor。
+#   validity: 對照原 PR／Issue 的有效資格與本人選擇；Leader 另須有效任命、
+#             本人接受及生效依據。格式正確不表示已任職；pending 檔名不裁定資格。
+#   participation: 每位正式成員至少自行選一項 Contributors，Leader 也一樣；
+#                  不從 leader 自動補入 contributors，不把選擇分工當成承接所有工作。
+#   method: 用既有 YAML 工具檢查語法，再人工核對欄位、引用、資格及分工。
+#           一般 parser 未必拒絕重複 key，須啟用該檢查或人工確認；不需專用 CI。
+#
+# maintenance:
+#   - null 表示本檔沒有列出已確認有效的 Leader；可能空缺或尚待核對，不能推定撤任。
+#   - 未確認／未生效的候選留在原 PR／Issue，不填成現任。
+#   - 依有效結果更新 leader；終止時清空該職位，其他有效職位保留。
+#   - 修改 contributors 依本人選擇及制度；不自動改 leader 或平台權限。
+#   - 個人檔案或 role 改名時，同一 PR 更新所有有效引用，歷史由 Git 保存。
+#   - 不直接用本檔替代案件固定投票名冊，不自動派發 Discord 角色。
+# =============================================================================
+assignments:
+- role: Hacker
+  leader: null
+  contributors:
+  - members/000000-johnny850807-水球潘.md
+  - members/pending-sunzhi-will.md
+- role: Networking／宣傳、自媒體（Threads／IG）
+  leader: null
+  contributors:
+  - members/000000-johnny850807-水球潘.md
+  - members/000006-yayapipi-Yapi.md
+- role: Onboard／篩選
+  leader: null
+  contributors:
+  - members/000000-johnny850807-水球潘.md
+- role: 活動籌辦與協助
+  leader: null
+  contributors:
+  - members/000000-johnny850807-水球潘.md
+  - members/pending-sunzhi-will.md
+- role: 基建-Repository 維護
+  leader: null
+  contributors:
+  - members/000000-johnny850807-水球潘.md
+  - members/000005-ping-yee.md
+- role: VC／其他組織媒合
+  leader: null
+  contributors:
+  - members/000000-johnny850807-水球潘.md
+- role: 基建-Domain-Name 維護
+  leader: null
+  contributors:
+  - members/000000-johnny850807-水球潘.md
+- role: 受訪者邀請與經驗分享
+  leader: null
+  contributors:
+  - members/000000-johnny850807-水球潘.md
+- role: 開源創業知識及流派整理
+  leader: null
+  contributors:
+  - members/000000-johnny850807-水球潘.md
+  - members/000006-yayapipi-Yapi.md
+- role: 公關-文案及使命傳達
+  leader: null
+  contributors:
+  - members/000000-johnny850807-水球潘.md
+- role: 司法與覆核
+  leader: null
+  contributors:
+  - members/000000-johnny850807-水球潘.md

@@ -304,7 +304,7 @@ Repo：https://github.com/AI-Native-Global-Founders-Speedrun-TW/ai-native-founde
 
 Council role 只提供辨識與通知，所有管理能力關閉，不因此開放 management 或 mod-log。允許任何參與者提及 Council role 本身，不為此開啟 @everyone 的 Mention Everyone／All Roles 權限。尚未核實真人任職時可先建立空角色，但不能據此宣布 Council 已成立。
 
-[Council 閱讀入口](../../members/council.md)須等 canonical repo 的 main 已發布且實際可讀後，才在原 onboard 說明加入網址；本機完成不等於已發布，不貼尚不存在的公開網址。角色掛名須另外核對有效任職與本人帳號，產生表、合併 PR 或已持有平台權限均不能代替。
+[Council 閱讀入口](../../members/r-and-r-assignment.yml)須等 canonical repo 的 main 已發布且實際可讀後，才在原 onboard 說明加入網址；本機完成不等於已發布，不貼尚不存在的公開網址。角色掛名須另外核對有效任職與本人帳號，名單、合併 PR 或已持有平台權限均不能代替。
 
 新增權限或換綁時，從已可核對的 GitHub 本人及 Discord 互動雙向確認，讀取 Discord User ID，不以暱稱、頭像或同名猜測。可用本次一次性確認或雙向原對話核對控制權，不要求私人證件。公開原案只記核對者、對象、時間及結果；私人訊息及未同意公開的帳號證據不入 public repo。尚未建立共享的私人綁定資料庫；下次新增或換綁時重新核對，不能假稱私人對話可永遠供其他管理者讀取。
 

@@ -1,6 +1,6 @@
 # Role and Responsibility
 
-本 package 維護各 R&R 的 Problem、擔任者條件、責任範圍、routine、non-routine、時間安排、SOP 引用及尚未訂定事項。一項 R&R 一份文件；人員仍由 [assignment](<../../members/r-and-r-assignment.md>) 維護。共通規則見[成員參與制度](<../01-制度/[機制] 憲政制度.md#routine-與-non-routine-responsibilities>)。
+本 package 維護各 R&R 的 Problem、擔任者條件、責任範圍、routine、non-routine、時間安排、SOP 引用及尚未訂定事項。一項 R&R 一份文件；Leader 與 Contributors 人員由同一份 [assignment YAML](../../members/r-and-r-assignment.yml) 維護。共通規則見[成員參與制度](<../01-制度/[機制] 憲政制度.md#routine-與-non-routine-responsibilities>)。
 
 ## 文件入口
 
@@ -27,10 +27,9 @@
 | 具體工作接受、routine 起算、時間及例外 | [憲政制度：Routine 與 non-routine responsibilities](<../01-制度/[機制] 憲政制度.md#routine-與-non-routine-responsibilities>) |
 | 利益迴避及操作權限 | [憲政制度](<../01-制度/[機制] 憲政制度.md>)；各 Role 僅補該職責的具體適用情況 |
 | 特有擔任者條件、範圍、決策權及責任 | 各 Role 文件 |
-| 現任人員與任職依據 | [assignment](<../../members/r-and-r-assignment.md>)；個人成員檔案入口見 [members README](<../../members/README.md>) |
+| 現任人員與任職依據 | Leader 與 Contributors 見 [assignment YAML](../../members/r-and-r-assignment.yml)；任職依據留在原 PR／Issue。 |
 | 執行步驟 | 各責任表連結的 [SOP](<../03-SOP/README.md>) |
 | 執行結果與未完成工作 | 原有 PR、Issue、Plan 或工作紀錄 |
-| 尚未訂定事項的接續 | [Kickoff](<../../plans/001-Kickoff/plan.md#rr-subpackage-與-responsibilities>) |
 
 ## Role 文件如何寫
 

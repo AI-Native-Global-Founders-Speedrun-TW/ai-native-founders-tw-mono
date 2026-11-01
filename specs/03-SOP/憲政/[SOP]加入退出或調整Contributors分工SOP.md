@@ -10,7 +10,7 @@ document_type: Spec
 
 1. 到 [R&R 入口](<../../02-R&R/README.md>)讀取想參與的職責與目前承接狀態。
 2. 選擇要加入或退出的分工。仍保有成員資格時，至少保留一項 Contributors；可以同時參與多項，Leader 也一樣。
-3. 在 PR 更新 [R&R assignment](<../../../members/r-and-r-assignment.md>)，說明自己的選擇。自介的 Contributions 可補充能力與意願，但不能代替 assignment。
+3. 在 PR 更新 [R&R assignment](<../../../members/r-and-r-assignment.yml>) 的對應 role 下 contributors 清單，填寫 repo 根起算的個人成員檔案路徑並說明自己的選擇；不改 leader。自介的 Contributions 可補充能力與意願，但不能代替 assignment。
 4. 想接具體工作時，另與該分工確認工作範圍、時間安排及本人接受；只加入 Contributors 不等於承接全部工作。調整分工前，把已接受而尚未完成的工作交代清楚。
 5. 請有 repo 合併權限者依有效內容合併，回讀 assignment 與相連的個人成員檔案，核對本人、資格及分工。
 

@@ -5,6 +5,10 @@ adopted: false
 
 # dc infra 審視與改動提案
 
+## 目前狀態
+
+最新採納為單一 assignment YAML：role、leader、contributors；Council 從有效 leader 去重，不另維護名單。目標為完成本地遷移、相關 SOP 與引用一致性及獨立 review，然後更新既有 PR。先前雙 YAML／產生表／工具設計均為歷史。本輪不合併 main 或更改 Discord，onboard 公開入口仍待合併後接續。
+
 ## 需求原文與範圍
 
 > 新的session, new task
@@ -331,7 +335,7 @@ Auto-sync status 沒有既有待收輪次。啟動器 dry-run 辨識的是 CEO �
 > ok do gap analysis and consistency analysis for your plan
 > after all agree, set a goal to work on this change, first local repo change then discord setup changed
 
-依本次授權，先獨立執行兩項分析並處理發現，再設定 Council 變更的執行 goal。完整的當期執行範圍與平台設定見[本輪執行範圍](Council名單與平台對應SSoT設計.md#本輪執行範圍與-discord-的確切變更)：本地來源、Council 表與工具先完成，再處理 Council role、協作 tags 與入口接合。發布後才加入新 Council 網址，尚未核實的真人任職不賦權。既有 moderation 職責歸屬、精確能力與人員接續仍未完成，不宣稱整份 dc Plan 已就緒。
+依本次授權，先獨立執行兩項分析並處理發現，再設定 Council 變更的執行 goal。當時執行順序如下（新版名單維護與平台接續見 [目前設計](Council名單與平台對應SSoT設計.md)）：本地來源、Council 表與工具先完成，再處理 Council role、協作 tags 與入口接合。發布後才加入新 Council 網址，尚未核實的真人任職不賦權。既有 moderation 職責歸屬、精確能力與人員接續仍未完成，不宣稱整份 dc Plan 已就緒。
 
 
 ### 本輪任職來源核對
@@ -349,7 +353,7 @@ assignment 先保留四項安排為依據待核對；Council 表不得呈現為�
 
 依決策 005（分析後順序執行），兩位獨立 reviewer 分別執行 gap analysis 與 consistency analysis，並於修訂後複讀同一版本。已補明新網址的發布與可讀前提、Council role 自身可被提及但無管理能力、協作 tags 的確切名稱與可選性，以及本次範圍與整份舊 Plan 的未完成事項。兩份分析均無本次範圍的剩餘阻擋問題，據此建立執行 goal；沒有宣告整 Plan ready。
 
-本地已合併本次查核的最新遠端 main，保留其他工作。四項 Leader 安排仍為「依據待核對」；沒有核定任職、撤任或發角色。已建立 [Council 表](../../members/council.md)、[產生與檢查工具](../../scripts/README.md)及只讀 CI。16 項行為測試通過，包含兼任去重、同名不同人、最後職位終止、保留另一有效職位、時間不一致、未來生效不自動轉正、重複身分、缺依據、產生失敗保留舊表與偵測手改／來源變動；本地 `--check` 通過，遠端 CI 尚未執行。
+本地已合併本次查核的最新遠端 main，保留其他工作。四項 Leader 安排仍為「依據待核對」；沒有核定任職、撤任或發角色。已建立 Council Markdown 表與產生／檢查工具（前版檔案，本輪已移除）及只讀 CI。16 項行為測試通過，包含兼任去重、同名不同人、最後職位終止、保留另一有效職位、時間不一致、未來生效不自動轉正、重複身分、缺依據、產生失敗保留舊表與偵測手改／來源變動；本地 `--check` 通過，遠端 CI 尚未執行。
 
 規格變化以[成員識別與資料的 Council 維護](<../../specs/01-制度/[規格]成員識別與資料.md#council-名單與維護>)為主要維護位置；[Repository 技術維護](<../../specs/02-R&R/[Role]基建-Repository維護.md#council-檢視的技術維護>)與[Discord 帳號核對與操作](<../../specs/05-社群基建/[規格]Discord-社群-Setup.md#council-帳號核對與操作>)引用接續。此變更回應[志工容易號召工作並找到願意一起做的人](#志工容易號召工作並找到願意一起做的人)：先讓人找到分工及依據，再按有效職責完成平台操作。
 
@@ -399,3 +403,175 @@ Council 新公開網址尚未加入 onboard：本地變更尚未獲授權 push�
 PR 基底複查修正原始需求的可點擊引用，改指向本 Plan 保留的原話；members README 明確區分 Contributors 每人一行與 Leader 固定欄位，並保留其他人的區塊。Discord 文案與 Threads 引導僅共用先理解再申請的順序，不宣稱兩處 prompt 相同。
 
 隔離 PR 的最終全文與新基底已由獨立 reviewer 複查，FORMULATION 無剩餘問題；憲法第 1 條（名稱與目的）、第 2 條（公益非商業）、第 3 條（效力制度分工）、第 4 條（開放成員資格）、第 5 條（自願參與義務）、第 6 條（分工議會組成）、第 7 條（決策任命範圍）、第 8 條（平等有效表決）、第 9 條（罷免職位替換）、第 10 條（異議資格保障）、第 11 條（利益緊急界線）、第 12 條（修憲成員監督）逐條均沒有違反。此結論允許發布本次 PR 分支，不涵蓋合併或直接推 main。
+
+
+## 2026-11-01：Council simple structure data 本地修訂
+
+### 使用者原話
+
+> 如果他要被 parse，why not use yml ?
+>
+> 舉例一下這 yml 你怎麼列？
+> 另外我覺得 council 也該是yml?
+>
+> 但我希望不要 over-engineering！！！
+> 能不能一切就從簡啊，不要一堆奇怪的 prone
+> 而是 simple structure data
+>
+> 本地先大幅更新我看看？
+
+### 本輪修訂
+
+前版讓 assignment 固定欄位經 parser 產生 Council Markdown，並增加專用 CI；後續 YAML 提案仍帶過多欄位。使用者要求從簡，因此改為直接手動維護 `members/council.yml`，每人只有 member 與 roles。Contributors 保留在原 assignment，Leader 入口統一指向 YAML；任職依據留原案。移除產生器、相關測試、工具說明、專用 workflow 與產生表，同步 README、制度與 SOP。
+
+本輪任職來源核對仍有效：未確認的安排留在本 Plan，不因格式改動就自動轉為現任。真實 YAML 暫為空清單，不能解讀為已裁定無人有資格。此輪只做本地修訂供 review，不推送、不更新 Discord。
+
+### 本輪 review 與憲法檢查
+
+獨立 peer 已全文檢查實際 diff、受影響文件與 FORMULATION。發現志工協作 SOP 的按人搜尋仍只查 assignment，已改為同查 Council YAML 與 assignment，複查通過，無剩餘阻擋。YAML 成功解析；Contributors 區塊與修改前一致；git diff --check 通過。未發布、未操作 Discord。
+
+- 第 1 條（名稱與目的）：沒有違反；保留協作及責任查找。
+- 第 2 條（公益非商業）：沒有違反；未新增商業交換或移除署名。
+- 第 3 條（效力制度分工）：沒有違反；名單維護不取代有效原案。
+- 第 4 條（開放成員資格）：沒有違反；未確認或空清單不取消資格。
+- 第 5 條（自願參與義務）：沒有違反；保留本人接受及自願參與。
+- 第 6 條（分工議會組成）：沒有違反；每人一筆多職位，保留有效 Leader 條件。
+- 第 7 條（決策任命範圍）：沒有違反；編輯 YAML 不構成任命。
+- 第 8 條（平等有效表決）：沒有違反；名單不代替案件固定投票名冊。
+- 第 9 條（罷免職位替換）：沒有違反；終止個別職位保留其他有效職位。
+- 第 10 條（異議資格保障）：沒有違反；未透過格式遷移撤任或除名。
+- 第 11 條（利益緊急界線）：沒有違反；私人資料與平台權限界線保持。
+- 第 12 條（修憲成員監督）：沒有違反；未改門檻、削減監督或追溯改算。
+
+
+## 2026-11-01：Plan 單向依賴與 YAML 格式說明
+
+### 使用者原話
+
+> 不要在那些 truth 或者是 members 裡面去提到 plan 好不好？
+>
+> plan 這個東西應該是單向依賴，永遠都是 plan 依賴出去，而不是外面的人依賴進來 plan，這個可以在 formulation 裡面加強嗎？
+>
+> 然後這個 YAML 上面應該要有一個很大的註解格式，去說明這個 YAML 的規範、整個格式與欄位是什麼，應該要有一個很 standard 的 structured expression，to let anyone know what to write and how to validate if the format is valid in the YAML's content.
+
+### 本輪變更
+
+[FORMULATION](../../FORMULATION.md#plan-的單向依賴) 明定單向依賴；移除 truth 與 members 對特定 Plan 的引用。原先只有 Kickoff 寫明的首屆任命與共同生效條件，移入[憲政制度](<../../specs/01-制度/[機制] 憲政制度.md#首屆任命與生效>)，保留既有條件，不新授予權力；Kickoff 中原文視為歷史，現行條件以制度為準。已移除的候選與進度引用不轉成已生效 truth。
+
+[Council YAML](../../members/r-and-r-assignment.yml) 以頂部註解說明 purpose、structure、example、validation 與 maintenance；正文仍只有 council 清單及 member／roles。語法、資料格式及任職有效性分開核對，不新增工具或 CI。本輪維持本地 review，未 push、未更新 Discord。
+
+### 本輪單向依賴 review 與憲法檢查
+
+獨立 peer 完整檢查後，修正問題文件仍以 Kickoff 追蹤證據的句子及 Verify note 拼寫不一致；最終複查通過。truth 與 members 無特定 Plan 引用；首屆條件與原文對照一致。YAML 可解析，格式註解不增加資料欄位或自動化工具。
+
+- 第 1 條（名稱與目的）：沒有違反；維持協作目的。
+- 第 2 條（公益非商業）：沒有違反；未改商業限制或署名保障。
+- 第 3 條（效力制度分工）：沒有違反；制度承載既有規則，格式不取代效力。
+- 第 4 條（開放成員資格）：沒有違反；空清單不裁定資格，既有資格保留。
+- 第 5 條（自願參與義務）：沒有違反；本人接受條件完整保留。
+- 第 6 條（分工議會組成）：沒有違反；有效 Leader 組成及兼任規則不變。
+- 第 7 條（決策任命範圍）：沒有違反；一次性安排未擴張，一般任命程序保留。
+- 第 8 條（平等有效表決）：沒有違反；YAML 不替代案件資格核對及固定名冊。
+- 第 9 條（罷免職位替換）：沒有違反；未改罷免及替換門檻。
+- 第 10 條（異議資格保障）：沒有違反；未以格式或資料缺漏取消資格。
+- 第 11 條（利益緊急界線）：沒有違反；利益迴避、私人證據及權限界線未變。
+- 第 12 條（修憲成員監督）：沒有違反；未新設常設權力、削減監督或追溯改算。
+
+
+### 本地檔案讀回與同步修正
+
+使用者指出：「I still didn't see you update the console or relevant YAMLs with the new rules.」「不對啊，這也根本沒符合規範啊」。讀回實際 YAML 確認仍為舊三行註解且引用 Plan；已恢復完整格式說明並移除反向引用，同步至原 mono checkout。兩處 YAML 位元組一致，解析成功；members 與 specs 無特定 Plan 引用。獨立 peer 重新檢查實際原 checkout，FORMULATION 通過；憲法第 1 條（名稱與目的）、第 2 條（公益非商業）、第 3 條（效力制度分工）、第 4 條（開放成員資格）、第 5 條（自願參與義務）、第 6 條（分工議會組成）、第 7 條（決策任命範圍）、第 8 條（平等有效表決）、第 9 條（罷免職位替換）、第 10 條（異議資格保障）、第 11 條（利益緊急界線）、第 12 條（修憲成員監督）逐條皆沒有違反。本輪未 commit、未 push。
+
+## R&R assignment YAML 提案（尚未採納）
+
+使用者要求：「ok deep analyze and propose」。本輪只提案，不改現行 assignment 或 truth。
+
+### 現況與要保留的意思
+
+現有 assignment 包含 11 項 R&R、16 筆 Contributors 關係；21 份 README、members 或 specs 文件引用其 Markdown 路徑。Leader 已改由 Council YAML 維護，assignment 內重複的 Leader 段落只提供入口。規格要求正式成員至少選一項 Contributors，Leader 也一樣；加入分工不等於接受該分工所有工作，更不自動取得管理權。pending 檔名不等於未入會，不能只憑檔名移除既有分工。
+
+### 建議結構
+
+以 members/r-and-r-assignment.yml 取代 Markdown 名單，每項 role 一筆，只放 role 與 contributors。Council 維持每人一筆 member 與 roles。兩者表達的是不同關係，不因同一人出現在兩處就算重複資料；不得從 Council 自動推導 Contributors。
+
+以下路徑為格式示意，不是真實人選或任命：
+
+```yaml
+assignments:
+  - role: Hacker
+    contributors:
+      - members/example.md
+  - role: 活動籌辦與協助
+    contributors: []
+```
+
+role 及 Council 的 roles 沿用 specs/02-R&R/README.md 文件入口中的既有 R&R 名稱。該入口已提供名稱與 Role 文件對應，不另建 role ID、registry 或重抄職責路徑。名稱調整時在同一變更更新該入口、兩份 YAML 及受影響引用。
+
+個人只使用 repo 根目錄起算的 members 檔案路徑，不另存姓名、Member ID、GitHub 或狀態。個人檔案改名時同步兩份 YAML，歷史不重寫。
+
+### 格式規範與驗證
+
+YAML 頂部沿用 Council 的 purpose、structure、example、validation、maintenance 註解分節。root 只允許 assignments；其值為 sequence。每筆只允許必填的 role（非空 string）與 contributors（string sequence）。同一 role 只能一筆，同一 role 內不得重複個人；同一人可出現在不同 role。同一人不得用不同路徑重複表示。
+
+保留目前全部 11 項角色，包括沒有人加入者；無人時明寫 contributors: []，不用 null 或省略。所有現行 Role 均須列出，停止的 Role 按有效決定移除；新增 Role 即使沒人也列空清單。這是分工清單，不另外包含 Leader、狀態、日期或證據欄位。
+
+格式驗證檢查 YAML 語法、重複 key、必填與型別、role 唯一、role 與既有入口一致、個人路徑存在且唯一。制度核對另檢查本人選擇、有效資格及每位正式成員至少一項 Contributors；檔案存在或格式正確都不能證明資格有效。尚未合併的自介 PR 可提出 assignment 變更，不因此把人列成已生效；合併仍依有效審查與制度處理。不新增專用 parser、schema、CI、產生表或平台同步服務。
+
+### 文件與操作影響
+
+刪除舊 Markdown 名單，避免兩份都能改。原填寫規範整理至 members/README.md 及 YAML 檔頭；治理規則維持 specs，歷史紀錄維持既有來源。更新所有指向舊檔及其章節 anchor 的有效引用；YAML 不保留 Markdown anchors，Role 文件改連到 YAML 並明說查找同名 role。從 GitHub 看 YAML 會失去原 Markdown 的可點擊人名與章節跳轉，接受以簡單結構與搜尋查找取代，不額外生成閱讀頁。
+
+主要影響：新增 assignment YAML、移除 assignment Markdown；更新 Council 的 role 名稱來源註解、members README、根 README、成員識別規格、憲政制度、R&R README、各 Role 的人員入口及受影響 SOP。沿用本 Plan 記錄過程；truth 與 members 不回連本 Plan。子 module 不在本輪直接修改，正式遷移前需確認是否有讀取舊檔或 anchors 的消費端，存在時列入必要同步範圍後再交付。
+
+### 遷移與 how to test
+
+先逐項轉換現有 11 項／16 筆關係，不趁格式遷移重新判定資格或變更人選。對照轉換前後的 role/member 關係完全相同，確認零漏列與零新增；對資格疑義沿原案處理，不以 pending 檔名自動撤除。再核對新路徑與引用、檔頭範例可解析、正文符合格式、有效文件無舊檔或 anchor 依賴。修正引用後刪除舊檔；不推送、不改 Discord，直到獲得相應授權。
+
+### 取捨
+
+不合併兩份名單：在 assignment 同時放 leader，再手填 Council 會重複維護；改用產生 Council 又回到使用者拒絕的工具。Council 按人適合看議會組成，Contributors 按 role 適合新人選分工，兩份都保持兩個欄位即可。人員及職責名稱仍需隨改名同步，這是選擇簡單檔案引用的成本，不宣稱免維護。
+
+
+### R&R YAML 提案 review
+
+獨立 peer 依 FORMULATION 複查通過，無阻擋提案交付的問題。實作前仍須查消費端，不宣稱已完成遷移。憲法逐條結論：
+
+- 第 1 條（名稱與目的）：沒有違反；本輪僅提案，不更動資格、任職、權限或既有制度。
+- 第 2 條（公益非商業）：沒有違反；本輪僅提案，不更動資格、任職、權限或既有制度。
+- 第 3 條（效力制度分工）：沒有違反；本輪僅提案，不更動資格、任職、權限或既有制度。
+- 第 4 條（開放成員資格）：沒有違反；本輪僅提案，不更動資格、任職、權限或既有制度。
+- 第 5 條（自願參與義務）：沒有違反；本輪僅提案，不更動資格、任職、權限或既有制度。
+- 第 6 條（分工議會組成）：沒有違反；本輪僅提案，不更動資格、任職、權限或既有制度。
+- 第 7 條（決策任命範圍）：沒有違反；本輪僅提案，不更動資格、任職、權限或既有制度。
+- 第 8 條（平等有效表決）：沒有違反；本輪僅提案，不更動資格、任職、權限或既有制度。
+- 第 9 條（罷免職位替換）：沒有違反；本輪僅提案，不更動資格、任職、權限或既有制度。
+- 第 10 條（異議資格保障）：沒有違反；本輪僅提案，不更動資格、任職、權限或既有制度。
+- 第 11 條（利益緊急界線）：沒有違反；本輪僅提案，不更動資格、任職、權限或既有制度。
+- 第 12 條（修憲成員監督）：沒有違反；本輪僅提案，不更動資格、任職、權限或既有制度。
+
+
+## 單一 assignment YAML 採納與 PR 更新
+
+使用者原話：「leader 咧」「好，整體相關 SOP 都改動了？最後一次檢查, update goal 確定一切都自洽後更新 PR」。採納把 role、leader、contributors 放在同一 YAML 的提案，Council 為非空 leader 去重集合，取代前版兩份名單。
+
+本輪 goal：完成單一資料遷移、全部相關 SOP 和有效引用更新，保持 11 項／16 筆 Contributors 關係不變，通過格式、引用、消費端及獨立 FORMULATION／逐條憲法檢查後更新既有 PR。先前 goal 所述 renderer 與 Council 產生表已被撤回；Discord main 公開入口及真人任職仍不冒稱完成。
+
+已查網站現有 build-graph 的 members 來源只掃 .md，舊檔名為排除項，新 .yml 不會被當自介；測試舊字串為排除測試樣本，不需變更網站。任職仍待原案證據核對，各 leader 為 null，不擅自填名。
+
+
+### 單一 YAML 最終檢查
+
+獨立 peer 已核對實際 diff 與受影響全文，FORMULATION 通過，無剩餘阻擋。11 項職責及 16 筆 Contributors 與原 Markdown 完全一致，leader null 不裁定資格；相關 SOP 與有效引用已同步。網站消費端僅掃 Markdown 自介，新 YAML 不會混入。YAML 解析、檔案引用與 git diff --check 通過；未初始化 submodule 的來源連結已於原 checkout 核對。可依本次授權更新既有 PR，合併及 Discord 入口更新仍不屬本次完成範圍。
+
+- 第 1 條（名稱與目的）：沒有違反；保持既有資格、本人選擇、任命條件與權限界線，格式遷移不改制度效力。
+- 第 2 條（公益非商業）：沒有違反；保持既有資格、本人選擇、任命條件與權限界線，格式遷移不改制度效力。
+- 第 3 條（效力制度分工）：沒有違反；保持既有資格、本人選擇、任命條件與權限界線，格式遷移不改制度效力。
+- 第 4 條（開放成員資格）：沒有違反；保持既有資格、本人選擇、任命條件與權限界線，格式遷移不改制度效力。
+- 第 5 條（自願參與義務）：沒有違反；保持既有資格、本人選擇、任命條件與權限界線，格式遷移不改制度效力。
+- 第 6 條（分工議會組成）：沒有違反；保持既有資格、本人選擇、任命條件與權限界線，格式遷移不改制度效力。
+- 第 7 條（決策任命範圍）：沒有違反；保持既有資格、本人選擇、任命條件與權限界線，格式遷移不改制度效力。
+- 第 8 條（平等有效表決）：沒有違反；保持既有資格、本人選擇、任命條件與權限界線，格式遷移不改制度效力。
+- 第 9 條（罷免職位替換）：沒有違反；保持既有資格、本人選擇、任命條件與權限界線，格式遷移不改制度效力。
+- 第 10 條（異議資格保障）：沒有違反；保持既有資格、本人選擇、任命條件與權限界線，格式遷移不改制度效力。
+- 第 11 條（利益緊急界線）：沒有違反；保持既有資格、本人選擇、任命條件與權限界線，格式遷移不改制度效力。
+- 第 12 條（修憲成員監督）：沒有違反；保持既有資格、本人選擇、任命條件與權限界線，格式遷移不改制度效力。

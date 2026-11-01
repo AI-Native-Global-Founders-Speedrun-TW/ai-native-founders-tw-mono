@@ -51,3 +51,30 @@
 - 完整語意：使用者要求對 Council 提案進行 gap analysis 與 consistency analysis；分析達成一致後設定執行 goal，先完成本地 repo 變更，再更新 Discord。Council 表保留一行 Verify note：Council 必須至少擔任一項有效的 R&R Leader。此授權不代替真人任職或組織決定，不將缺少原案依據補造為有效，也未要求 push。
 - 推翻：無
 - 落點：plans/004-dc-infra/plan.md 的分析與執行順序；Council名單與平台對應SSoT設計.md；後續本地 sources、工具、specs 與 Discord 設定
+
+
+## 決策 006（名單結構從簡）
+
+- 使用者：Johnny Pan
+- 日期：2026-11-01
+- 完整語意：使用者要求 Council 使用 simple structure data，避免 over-engineering，並授權先在本地大幅更新供 review。採用手動 YAML 的 member 與 roles，移除前版產生表、parser 與專用 CI；不因此確認真人任職，也不授權本輪 push 或 Discord 更新。
+- 推翻：前版 Council 名單產生與專用工具設計；既有憲政資格、表決與平台權限規則不變。
+- 落點：本 Plan 最新本地修訂節、Council SSoT 設計及 members/council.yml。
+
+
+## 決策 007（單向依賴規範）
+
+- 使用者：Johnny Pan
+- 日期：2026-11-01
+- 完整語意：Plan 永遠向外依賴，truth 與 members 不得依賴 Plan；在 FORMULATION 明定。Council YAML 頂部以完整結構化註解說明規範、格式、欄位與驗證方式，讓讀者知道如何填寫及判定有效格式。
+- 推翻：前版由 members 與 truth 連回 Plan 補足任職狀態或規則的設計。
+- 落點：FORMULATION、Council YAML、受影響 truth 與 members；原話見本 Plan 最新段落。
+
+
+## 決策 008（單一分工資料）
+
+- 使用者：Johnny Pan
+- 日期：2026-11-01
+- 完整語意：同意單一 assignment YAML 同列 role、leader、contributors，Council 由非空 leader 去重；要求最後一次一致性檢查並更新既有 PR。
+- 推翻：Council 與 Contributors 分別手填兩份 YAML 的前版設計。
+- 落點：assignment YAML、相關 SOP／specs 與本 Plan 最新執行目標。
