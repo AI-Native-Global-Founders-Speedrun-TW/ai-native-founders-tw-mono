@@ -197,7 +197,7 @@ onboard 以[釘選訊息](https://discord.com/channels/1563453138810306612/15634
 
 ### onboard 釘選文案
 
-下列文案使用 Discord Markdown；頻道提及指向本 server 已存在的頻道。Agent prompt 與 [Threads 邀請公版](<../03-SOP/[SOP]Threads引流招募客服SOP.md>)使用相同引導意圖，Discord 不帶入私訊客服或發送規則。
+下列文案使用 Discord Markdown；頻道提及指向本 server 已存在的頻道。此 Agent prompt 延續 [Threads 邀請公版](<../03-SOP/[SOP]Threads引流招募客服SOP.md>)先理解組織、再依意願申請的順序；兩處不要求使用同一段 prompt，Discord 不帶入私訊客服或發送規則。
 
 ````markdown
 **Onboard｜從這裡開始**
