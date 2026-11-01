@@ -61,8 +61,6 @@
 
 [Sun（謝上智）](pending-sunzhi-will.md)（Johnny 已指定、本人已接受，待首屆共同生效）
 
-指定、本人接受與尚未生效的依據見 [Kickoff 的 Sun 活動籌辦 Leader 登錄](../plans/001-Kickoff/plan.md#sun-活動籌辦-leader-登錄)。
-
 ### Contributors
 
 - [水球](000000-johnny850807-水球潘.md)（Member ID：000000）
