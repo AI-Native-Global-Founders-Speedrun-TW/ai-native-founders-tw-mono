@@ -54,7 +54,7 @@
 ```text
 我想參與的方向是：〈感興趣的事情、可以幫忙的部分與可投入時間〉。
 
-請讀 specs/02-R&R/README.md、相關 Role 與 members/r-and-r-assignment.md，幫我找到適合的分工、現任聯繫者及相關 SOP。人選待確認或職位空缺時請如實說明。
+請讀 specs/02-R&R/README.md、相關 Role、members/r-and-r-assignment.yml，幫我找到適合的分工、現任聯繫者及相關 SOP。人選待確認或職位空缺時請如實說明。
 
 若我要調整 Contributors，依 specs/03-SOP/憲政/ 中的加入退出或調整 Contributors 分工 SOP，準備我的 assignment 修改。若我想承接具體工作，先找既有 Issue 或 Plan，幫我整理可接續的工作與完成條件，再由我確認承接範圍。
 ```
@@ -122,5 +122,6 @@
 | [Specs](specs/README.md) | 現行規格及各 package |
 | [Plans](plans/README.md) | 進行中的計畫與變更脈絡 |
 | [Logs](logs/) | 累積的會議及執行記錄 |
+| [Council 名單](members/r-and-r-assignment.yml) | 查閱各 role 的 leader；同一人兼任只算一位 Council |
 | [Members](members/README.md) | 自介提交、成員資料與分工入口 |
 | [Modules](modules/README.md) | Git submodules 與本機操作入口 |

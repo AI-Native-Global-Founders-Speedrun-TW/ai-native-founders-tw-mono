@@ -17,4 +17,4 @@
 
 ## 制度與執行入口
 
-憲法與共同制度見制度 package；Role 定義職責與決策範圍，現任人員見 [members assignment](../members/r-and-r-assignment.md)。成員行使權利的步驟見 [憲政 SOP](03-SOP/憲政/README.md)。修憲文書、逐條原文與修訂內容的要求依[修憲及正式成員監督](<01-制度/[機制] 憲政制度.md#修憲及正式成員監督>)與[修改共同制度或提出修憲 SOP](<03-SOP/憲政/[SOP]修改共同制度或提出修憲SOP.md>)；獨立憲法檢查依 [AGENTS](../AGENTS.md#憲法)，不在入口重訂規則。
+憲法與共同制度見制度 package；Role 定義職責與決策範圍，現任人員見 [members assignment](../members/r-and-r-assignment.yml)。成員行使權利的步驟見 [憲政 SOP](03-SOP/憲政/README.md)。修憲文書、逐條原文與修訂內容的要求依[修憲及正式成員監督](<01-制度/[機制] 憲政制度.md#修憲及正式成員監督>)與[修改共同制度或提出修憲 SOP](<03-SOP/憲政/[SOP]修改共同制度或提出修憲SOP.md>)；獨立憲法檢查依 [AGENTS](../AGENTS.md#憲法)，不在入口重訂規則。
