@@ -91,7 +91,7 @@ assignment YAML 每項 R&R 一筆 role、leader 與 contributors。新增自己�
 
 ## Council 名單與維護
 
-直接讀 [assignment YAML](r-and-r-assignment.yml)，各 role 的非空 leader 去重後就是 Council；兼任多項職責仍只算一人。不另外手填或產生 Council 名單。
+直接讀 [assignment YAML](r-and-r-assignment.yml)，先依原案核對各 role 的有效任職，再將有效 leader 依同人去重為 Council；欄位有值本身不證明已生效；兼任多項職責仍只算一人。不另外手填或產生 Council 名單。
 
 檔頭註解包含格式、欄位、範例與驗證方式。職責定義見 [R&R 入口](../specs/02-R&R/README.md)，各 Role 的人員入口指向同一份 YAML，以 role 名稱查找。任命及本人接受依據留在原 PR／Issue；leader 為 null 不表示已裁定無人具資格。詳細規則依[成員識別與資料](<../specs/01-制度/[規格]成員識別與資料.md#council-名單與維護>)。
 

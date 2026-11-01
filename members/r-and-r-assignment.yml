@@ -3,7 +3,8 @@
 # =============================================================================
 # purpose: 唯一的人員分工資料；每項 R&R 同時列出 Leader 與 Contributors。
 # Verify note：Council 必須至少擔任一項有效的 R&R Leader。
-# council: 所有非 null leader 依個人成員路徑去重；不另外手填或產生 Council 名單。
+# council: 先依原案核對有效任職，再將有效 leader 依同人去重；有值不證明已生效。
+#          不另外手填或產生 Council 名單。
 #
 # structure:
 #   root: mapping，只允許必填的 assignments。
@@ -40,8 +41,9 @@
 #                  不在本檔重抄 ID；對應及派發角色須另核對本人、有效任職與伺服器成員。
 #
 # maintenance:
-#   - null 表示本檔沒有列出已確認有效的 Leader；可能空缺或尚待核對，不能推定撤任。
-#   - 未確認／未生效的候選留在原 PR／Issue，不填成現任。
+#   - null 表示尚無已登錄的 Leader；不得因本輪尚未核對完證據而清空既有姓名。
+#   - 格式遷移保留既有 Leader 對應；既有任職的生效條件與待核對事項仍依原案。
+#   - 新候選不直接填成現任；本檔有姓名也不代替任命效力與權限核對。
 #   - 依有效結果更新 leader；終止時清空該職位，其他有效職位保留。
 #   - 修改 contributors 依本人選擇及制度；不自動改 leader 或平台權限。
 #   - 個人檔案或 role 改名時，同一 PR 更新所有有效引用，歷史由 Git 保存。
@@ -63,12 +65,12 @@ assignments:
   contributors:
   - members/000000-johnny850807-水球潘.md
 - role: 活動籌辦與協助
-  leader: null
+  leader: members/pending-sunzhi-will.md
   contributors:
   - members/000000-johnny850807-水球潘.md
   - members/pending-sunzhi-will.md
 - role: 基建-Repository 維護
-  leader: null
+  leader: members/000005-ping-yee.md
   contributors:
   - members/000000-johnny850807-水球潘.md
   - members/000005-ping-yee.md
@@ -77,7 +79,7 @@ assignments:
   contributors:
   - members/000000-johnny850807-水球潘.md
 - role: 基建-Domain-Name 維護
-  leader: null
+  leader: members/000000-johnny850807-水球潘.md
   contributors:
   - members/000000-johnny850807-水球潘.md
 - role: 受訪者邀請與經驗分享
@@ -94,6 +96,6 @@ assignments:
   contributors:
   - members/000000-johnny850807-水球潘.md
 - role: 司法與覆核
-  leader: null
+  leader: members/000000-johnny850807-水球潘.md
   contributors:
   - members/000000-johnny850807-水球潘.md
