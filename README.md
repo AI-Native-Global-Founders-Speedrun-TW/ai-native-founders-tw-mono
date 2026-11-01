@@ -122,6 +122,6 @@
 | [Specs](specs/README.md) | 現行規格及各 package |
 | [Plans](plans/README.md) | 進行中的計畫與變更脈絡 |
 | [Logs](logs/) | 累積的會議及執行記錄 |
-| [Council 名單](members/r-and-r-assignment.yml) | 查閱各 role 的 leader；同一人兼任只算一位 Council |
+| [Council 名單](members/r-and-r-assignment.yml) | 依制度核對有效任職後，將同一人的 leader 去重為 Council |
 | [Members](members/README.md) | 自介提交、成員資料與分工入口 |
 | [Modules](modules/README.md) | Git submodules 與本機操作入口 |
