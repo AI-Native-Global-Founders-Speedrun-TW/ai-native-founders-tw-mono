@@ -4,7 +4,7 @@
 
 # Specs
 
-[共同規則與文件分工](<README.md#共同規則與文件分工>) · 現任人員：[R&R assignment](<../../members/r-and-r-assignment.md#knowledge>)
+[共同規則與文件分工](<README.md#共同規則與文件分工>) · 現任人員：[R&R assignment](<../../members/r-and-r-assignment.yml>)（依本職責名稱查找 role）
 
 ## 擔任者條件
 

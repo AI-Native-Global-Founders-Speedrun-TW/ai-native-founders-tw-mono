@@ -3,3 +3,7 @@
 **/verification-evidence/
 **/test-results/
 **/playwright-report/
+
+# Python 本機快取
+__pycache__/
+*.py[cod]

@@ -1,12 +1,19 @@
 # Jasmine Ow
 
-![Jasmine Ow 的照片](assets/jasmineow.jpg)
+![Jasmine Ow的真人照片](<assets/pending-jasmineow-Jasmine Ow-半身照.jpg>)
+
+## 成員資料
+
+Member ID：待配置
+GitHub：Jasmineow
+
+```yaml
+discord_id: null
+```
 
 ## 我是誰
 
 我是 Jasmine，SonicStride 的 Founder，在台北。
-
-SonicStride 是一個 iPhone + Apple Watch App：用手錶讀取心率、步頻等身體訊號，讓音樂即時跟著身體變化，每次跑步都變成一張屬於自己的專輯。另一條產品線是 SonicStride Studio，一個互動音樂編輯器，已經在實際的瑜伽課、翻滾課上使用過。目前還在早期，App 正在 TestFlight Beta 測試，產品體驗與市場都還在驗證中。
 
 我也在台北主辦 LFR（Founder Run Club），一個每週固定的創辦人跑團：跑 30 分鐘、一起吃早餐或晚餐、一起 cowork。
 
@@ -21,14 +28,16 @@ SonicStride 是一個 iPhone + Apple Watch App：用手錶讀取心率、步頻�
 - 跳舞多年，也練 Vinyasa 瑜伽，常說自己是 designer-founder-dancer。
 - 曾在 CVC × TASC Startup Networking Night、「Claude Code × Music」、Blessed. × Digital Vikings「Founder Stories」、AI Tinkerers Taipei 等場合分享或展示。
 
-Member ID：待配置
-GitHub：Jasmineow
 其他聯絡方式或作品連結：
 
 - 官網：https://www.sonicstride.app
 - Instagram：https://www.instagram.com/sonicstride
 - LinkedIn：https://www.linkedin.com/in/jasmine-ow-853077175
 - LFR 跑團：https://lfr-sonicstride.vercel.app
+
+## 我正在 build 的產品或專案
+
+SonicStride 是一個 iPhone + Apple Watch App：用手錶讀取心率、步頻等身體訊號，讓音樂即時跟著身體變化，每次跑步都變成一張屬於自己的專輯。另一條產品線是 SonicStride Studio，一個互動音樂編輯器，已經在實際的瑜伽課、翻滾課上使用過。目前還在早期，App 正在 TestFlight Beta 測試，產品體驗與市場都還在驗證中。
 
 ## 為什麼想加入
 
