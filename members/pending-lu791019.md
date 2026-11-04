@@ -13,19 +13,26 @@ discord_id: "844513999718842388"
 
 ## 我是誰
 
-大家好，我是 Dex（盧冠宏），在台灣工作。我用技術理解問題，用教學傳遞方法，也用陪伴促成改變。
+我是 Dex。我用技術理解問題，用教學傳遞方法，也用陪伴促成改變。
 
-我在國立中山大學念材料與光電科學研究所，不是資訊本科。過去十年跨過四個產業、六家公司，從半導體缺陷分析，一路走到資料工程與 AI 應用開發：
+我不是資訊本科。過去十年跨過四個產業、六家公司，從半導體缺陷分析，一路走到資料工程與 AI 應用開發：
 
-- **現職：** 哈馬星科技 Tech Leader／AI 應用開發主任工程師，帶 2 人工程團隊，負責 AI 與物件辨識產品；另一個 SaaS 產品同時擔任 PM 與技術負責人。
-- **過去經歷：** 緯創資通後端與資料工程師、LINE Bank 資料工程師、TutorABC 大數據工程師、台灣美光缺陷分析工程師。
-- **行銷：** 曾任行銷專員，把技術內容轉譯成學習者願意讀、願意行動的語言。
-- **教學與陪跑：** TibaMe 雲端資料工程師養成班指導業師，也在多個轉職課程擔任專題教練；在高中、大學、企業內訓與線上講座分享 AI 與職涯主題。
-- **生涯教練：** CDA 國際生涯發展諮詢師、AndAction Life Coach、104 Giver。
-- **社會參與：** 台灣全齡生涯發展協會理事；參與 T-Cross（T 大使）計畫，與左鎮在地的左達工作室協作臺南左鎮智慧街區；也為合照盟開發 AI 數位轉型工具；g0v 島島阿學核心成員、PyCon TW 議程組與行銷組。
-- **內容：** 經營 DayDreamDex 塵世哲學，包含部落格、電子報《我與經驗值 I and EXP》與 Podcast，也以「塵世影導」身分寫影評。
+- **現職：** 哈馬星科技 Tech Leader／AI 應用開發主任工程師，帶 2 人工程團隊，負責 AI 與物件辨識產品；另一個 AI SaaS 產品同時擔任產品經理與技術開發者
+- **過去經歷：** 緯創資通後端與資料工程師、LINE Bank 資料工程師、TutorABC 大數據工程師、台灣美光缺陷分析工程師
+- **行銷：** 曾任行銷專員，把技術內容轉譯成學習者願意讀、願意行動的語言
+- **教學與陪跑：** TibaMe 雲端資料工程師養成班指導業師，也在多個轉職課程擔任專題教練；在高中、大學、企業內訓與線上講座分享 AI 與職涯主題
+- **生涯教練：** CDA 國際生涯發展諮詢師、AndAction Life Coach、104 Giver
+- **社會參與：** 台灣全齡生涯發展協會理事；參與 T-Cross（T 大使）計畫，與左鎮在地的左達工作室協作臺南左鎮智慧街區；也為合照盟開發 AI 數位轉型工具；g0v 島島阿學核心成員、PyCon TW 議程組與行銷組
+- **內容：** 經營 DayDreamDex 塵世哲學，包含部落格、電子報《我與經驗值 I and EXP》與 Podcast，也以「塵世影導」身分寫影評
 
-其他聯絡方式或作品連結：[daydreamdex.com](https://daydreamdex.com/)、作品：[練功房](https://learn.daydreamdex.com/)、[散場誌](https://castflow.daydreamdex.com/)、[Threads @daydreamdex](https://www.threads.net/@daydreamdex)、[portaly.cc/daydreamdex](https://portaly.cc/daydreamdex)
+其他聯絡方式或作品連結：
+- [daydreamdex.com](https://daydreamdex.com/)
+
+- 作品：
+- [練功房](https://learn.daydreamdex.com/)、
+- [散場誌](https://castflow.daydreamdex.com/)、
+- [Threads @daydreamdex](https://www.threads.net/@daydreamdex)、
+- [portaly.cc/daydreamdex](https://portaly.cc/daydreamdex)
 
 ## 我正在 build 的產品或專案（選填）
 
