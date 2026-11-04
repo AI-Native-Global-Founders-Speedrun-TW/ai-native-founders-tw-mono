@@ -26,13 +26,10 @@ discord_id: "844513999718842388"
 - **內容：** 經營 DayDreamDex 塵世哲學，包含部落格、電子報《我與經驗值 I and EXP》與 Podcast，也以「塵世影導」身分寫影評
 
 其他聯絡方式或作品連結：
-- [daydreamdex.com](https://daydreamdex.com/)
 
-- 作品：
-- [練功房](https://learn.daydreamdex.com/)、
-- [散場誌](https://castflow.daydreamdex.com/)、
-- [Threads @daydreamdex](https://www.threads.net/@daydreamdex)、
-- [portaly.cc/daydreamdex](https://portaly.cc/daydreamdex)
+- 網站：[daydreamdex.com](https://daydreamdex.com/)
+- 作品：[練功房](https://learn.daydreamdex.com/)、[散場誌](https://castflow.daydreamdex.com/)
+- 社群與連結：[Threads @daydreamdex](https://www.threads.net/@daydreamdex)、[portaly.cc/daydreamdex](https://portaly.cc/daydreamdex)
 
 ## 我正在 build 的產品或專案（選填）
 
