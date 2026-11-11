@@ -104,7 +104,7 @@ FORMULATION 獨立檢查通過，modules 路徑、gitlink、README、授權及�
 
 GitHub repository 已由使用者改名為 `startup-cami-skills`。模組內三支 skills 改為 `startup-cami-office`、`startup-cami-facilitation`、`startup-cami-evaluate`。runtime、範本、專案資料檔與本地 view 設定隨之改名，專案資料檔為 `startup-cami.yaml`。只有舊檔名 `startup101.yaml` 的既有專案仍可讀寫，`migrate-name` 預設預覽，`--apply` 才改成新檔名並保留舊檔。已存進使用者資料的識別碼維持原值，改動會讓既有資料失效。
 
-README 改以 Cami Startup Canvas 為名，更新 clone 網址、指令與檔名，並說明改名前建立的專案如何沿用。README 致謝（後來另改，見「README 致謝改寫」）與 About 頁的 Cami 介紹改用上述原話：「Cami 做投資，同時也做加速器，STARTUP101 是她的產出之一」。STARTUP101 只作為 Cami 的產出與照片來源標示，不作產品或 skill 名稱，也不再放推介 STARTUP101 服務的延伸閱讀區塊。Cami 照片原本可見麥克風牌上的 STARTUP101 logo，已換成修去 logo 的版本，Canvas 範本與離線介紹頁的內嵌照片同步更換。README 拿掉仍顯示舊產品名的 YouTube 縮圖，保留影片文字連結。
+README 改以 Cami Startup Canvas 為名，更新 clone 網址、指令與檔名，並說明改名前建立的專案如何沿用。README 致謝與 About 頁的 Cami 介紹（兩處後來都另改，見「README 致謝改寫」）改用上述原話：「Cami 做投資，同時也做加速器，STARTUP101 是她的產出之一」。STARTUP101 只作為 Cami 的機構與照片來源標示，不作產品或 skill 名稱，也不再放推介 STARTUP101 服務的延伸閱讀區塊。Cami 照片原本可見麥克風牌上的 STARTUP101 logo，已換成修去 logo 的版本，Canvas 範本與離線介紹頁的內嵌照片同步更換。README 拿掉仍顯示舊產品名的 YouTube 縮圖，保留影片文字連結。
 
 mono 的 submodule 路徑改為 `modules/startup-cami-skills`，`.gitmodules` 改為新網址，本 Plan 目錄同步改名。這次沒有 specs 變更：改名屬於模組實作與使用說明，組織職責、職權與合作承諾不變。
 
@@ -130,4 +130,10 @@ README 致謝改為「Cami 是 STARTUP101 的執行長，同時也有在做投�
 
 > 也就是 STARTUP 101 的執行長，同時也有在做投資跟加速器
 
-這次只改 README；About 頁的 Cami 介紹仍是「Cami 做投資，同時也做加速器，STARTUP101 是她的產出之一」，兩處說法不同。
+使用者先只指定 README，About 頁暫未改；確認後追加：
+
+> 1. 要一起改
+
+About 頁的 Cami 介紹同步改為「Cami 是 STARTUP101 的執行長，同時也有在做投資跟加速器」，英文為 “Cami is the CEO of STARTUP101, and she also works in investment and accelerators.”，About HTTP 測試隨之更新。README 與 About 頁說法一致。
+
+後兩輪（README 改稱 Cami 為 STARTUP101 執行長、About 頁同步）各經獨立 review，FORMULATION 通過；憲法逐條結論均為沒有違反，第 2 條（公益與非商業性）理由為只寫 Cami 的職務與經歷，不描述或推介 STARTUP101 的服務，About 頁無 STARTUP101 連結或推介區塊。
