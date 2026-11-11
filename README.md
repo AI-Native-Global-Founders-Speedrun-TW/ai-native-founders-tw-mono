@@ -9,7 +9,7 @@
 ### 先 clone，認識這個組織
 
 ```text
-請 clone https://github.com/AI-Native-Founders-TW/ai-native-founders-tw-mono.git，並進入 repo；如果本機已有這份 repo，就使用既有目錄，保留未提交的修改。
+請 clone https://github.com/AI-Native-Global-Founders-Speedrun-TW/ai-native-founders-tw-mono.git，並進入 repo；如果本機已有這份 repo，就使用既有目錄，保留未提交的修改。
 
 先讀 AGENTS.md、FORMULATION.md、specs/00-願景和問題/vision.md 與 specs/01-制度/憲法.md，再看 members/README.md 及 specs/02-R&R/README.md。
 請簡單說明這個組織想做什麼、我可以如何加入及參與，並問我想從哪件事開始。現行規則以 specs 為準，不把歷史討論、候選人名或規格文件當成已完成的任命與平台設定。
