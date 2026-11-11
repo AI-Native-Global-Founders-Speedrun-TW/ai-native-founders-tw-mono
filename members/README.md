@@ -61,7 +61,7 @@ Contributions 必須在提交前寫清楚，不能留待之後補充。寫得越
 
 ## 提交 PR
 
-1. 登入 GitHub，Fork [本 Repo](https://github.com/AI-Native-Founders-TW/ai-native-founders-tw-mono)。
+1. 登入 GitHub，Fork [本 Repo](https://github.com/AI-Native-Global-Founders-Speedrun-TW/ai-native-founders-tw-mono)。
 2. 在自己的 Fork 建立分支，在 `members/` 新增一份 Markdown 自介。初次申請使用 `pending-<小寫GitHub帳號>.md`，Member ID 保留「待配置」，不自行選編號；已有編號者直接更新原自介。正式檔名與識別規則依[成員識別與資料](<../specs/01-制度/[規格]成員識別與資料.md>)，由合併人員在合併前配置。同時將本人的真人照片上傳至 `members/assets/`，依[照片與圖片檔名](../specs/03-SOP/[SOP]自介PR審查SOP.md#照片與圖片檔名)命名，並在自介引用相同檔名。不要修改別人的自介或照片。
 3. 將範例中的 `<...>` 替換成自己的內容。可以用 AI 協助整理，但提交前務必由本人親自 review 全文：確認照片是本人的真人照片且可公開、圖片正常顯示，以及經歷、連結、動機、期待與 Contributions 真實，沒有 AI 編造的內容或參與承諾，也沒有不願公開的個資。
 4. 依[成員參與制度](<../specs/01-制度/[機制] 憲政制度.md#rr-assignment>)，從 [R&R assignment](r-and-r-assignment.yml)選至少一個 R&R，將自己列入 Contributors，可選多個。在對應 role 的 contributors 清單填入從 repo 根起算的個人成員檔案路徑，不重抄 Member ID、GitHub 或資格狀態。不修改其他人的 assignment，也不在自介另抄有效分工名單。
