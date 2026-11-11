@@ -10,6 +10,6 @@ Plan 的定義與內容責任依 [FORMULATION](../FORMULATION.md#plan-與-specs-
 | [水球第一批邀請所有留言者](003-水球第一批邀請所有留言者/plan.md) | 留言與私訊名單搜集、去重及邀請 | Checkpoint；100 人完成，尚未完成全員邀請 |
 | [邀請 SOP 優化](005-邀請SOP優化/plan.md) | 公版分則、意願判斷及中斷接續 | Adopted |
 | [自介審查通過後自動處理 GitHub 入會權限](006-自介審查通過後自動處理GitHub入會權限/plan.md) | 自介 PR 有效核准並合併後，自動發送 org Member 邀請並確認接受狀態 | 建置結束；App／environment 與 dry-run 完成，保持停用；下一筆入會申請接續正式驗證 |
-| [Startup 101 skills 與 Canvas 模組](007-startup101-cami-skills/plan.md) | 匯入三支 skills 與雙語 Canvas | 待 PR 審查 |
+| [Cami Startup Canvas skills 與 Canvas 模組](007-startup-cami-skills/plan.md) | 匯入三支 skills 與雙語 Canvas；因商標改名為 startup-cami | 已收錄；模組與 repository 改名為 startup-cami-skills |
 
 Kickoff 合併前的背景見其[歷史紀錄](001-Kickoff/歷史紀錄.md)與[合併來源對照](001-Kickoff/合併來源對照.md)。本次啟動的專門修憲文書見[憲政修憲 Plan](001-Kickoff/憲政修憲Plan.md)，它是同一 package 的文件，不是另一條治理工作主線。

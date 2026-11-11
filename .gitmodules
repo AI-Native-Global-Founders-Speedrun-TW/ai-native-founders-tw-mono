@@ -1,6 +1,6 @@
 [submodule "ai-native-founders-tw-web"]
 	path = modules/ai-native-founders-tw-web
 	url = git@github.com:AI-Native-Founders-TW/ai-native-founders-tw-web.git
-[submodule "modules/startup101-cami-skills"]
-	path = modules/startup101-cami-skills
-	url = git@github.com:AI-Native-Global-Founders-Speedrun-TW/startup101-cami-skills.git
+[submodule "modules/startup-cami-skills"]
+	path = modules/startup-cami-skills
+	url = git@github.com:AI-Native-Global-Founders-Speedrun-TW/startup-cami-skills.git
