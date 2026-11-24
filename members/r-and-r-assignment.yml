@@ -56,12 +56,17 @@ assignments:
   contributors:
   - members/000000-johnny850807-水球潘.md
   - members/000004-sunzhi-will.md
+<<<<<<< HEAD
   - members/pending-gpwork4u.md
+=======
+  - members/pending-sr0725.md
+>>>>>>> origin/main
 - role: Networking／宣傳、自媒體（Threads／IG）
   leader: null
   contributors:
   - members/000000-johnny850807-水球潘.md
   - members/000006-yayapipi-Yapi.md
+  - members/pending-jasmineow.md
 - role: Onboard／篩選
   leader: null
   contributors:
@@ -72,6 +77,7 @@ assignments:
   contributors:
   - members/000000-johnny850807-水球潘.md
   - members/000004-sunzhi-will.md
+  - members/pending-jasmineow.md
 - role: 基建-Repository 維護
   leader: members/000005-ping-yee.md
   contributors:

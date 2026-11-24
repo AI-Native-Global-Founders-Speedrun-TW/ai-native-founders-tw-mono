@@ -324,3 +324,38 @@ Credits 頁的網站製作名單與 `credits.yml` 維持原樣，[Credits 文案
 - 第 22 條（首版建立安排）：沒有違反。
 
 使用者後續明確授權「commit and push」，本次提交並推送上述移除與禁止版控規則；不重寫既有歷史。
+
+
+## GitHub 導覽連結修正（2026-11-03）
+
+需求原文：「web 中目前導覽的 link 好像會過時？請更新來貼合 github 目前的實際 url」。截圖指出申請制度連結回傳 404。
+
+依最新 GitHub main 核對，申請制度已併入[憲政制度的申請與成員資格](<../../specs/01-制度/[機制] 憲政制度.md#申請與成員資格>)；網站改連此章，並修正憲法中文檔名、members 小寫路徑與 organization 現名。同步導覽、自介建立入口、文件圖譜與 AI 文件索引的路徑，網站 README／AGENTS 保持同一實際位置。沒有變更組織規則，故不製造 specs delta。
+
+GitHub API 已核對兩個 repository canonical URL 與六個文件在遠端 main 存在；申請章節於本地最新 main 存在。實作基於網站 origin/main；初次本地驗證時尚未 push、部署或更新 mono 的已提交 submodule 指標，提交狀態見下節。Node 24 執行 check、test、lint、build 均通過；48 項測試通過、1 項跳過。產生 HTML 的 12 種 mono 文件連結皆能對到最新 main 檔案，中英文加入頁申請連結均指向現行章節。獨立 FORMULATION 及逐條憲法 review 通過，git diff --check 通過。
+
+本輪限 URL 修正，未宣稱整個申請流程已同步：既有加入文案仍有僅提審查通過的敘述，產生器的檔名、GitHub 選填與巢狀 fence 範本解析仍須另行對照最新 SOP。未部署。
+
+本輪憲法逐條檢查：
+- 第 1 條（名稱與目的）：沒有違反。
+- 第 2 條（公益非商業）：沒有違反。
+- 第 3 條（效力制度分工）：沒有違反。
+- 第 4 條（開放成員資格）：沒有違反。
+- 第 5 條（自願參與義務）：沒有違反。
+- 第 6 條（分工議會組成）：沒有違反。
+- 第 7 條（決策任命範圍）：沒有違反。
+- 第 8 條（平等有效表決）：沒有違反。
+- 第 9 條（罷免職位替換）：沒有違反。
+- 第 10 條（異議資格保障）：沒有違反。
+- 第 11 條（利益緊急界線）：沒有違反。
+- 第 12 條（修憲成員監督）：沒有違反。
+
+### 連結修正提交與 submodule 接續
+
+使用者授權：「好，把這次連結修正 commit、push 然後發 PR，mono 的 submodule 指標也一起更新。」
+
+網站修正已提交並推送，見[網站連結修正 PR](https://github.com/AI-Native-Global-Founders-Speedrun-TW/ai-native-founders-tw-web/pull/3)。mono 指標更新至 `af48767b590db0b832bb4d5a642d733beeb52880`（網站連結修正），相對原指標亦包含網站 main 已有的 README hero 更新，沒有其他新增功能。網站工作樹乾淨，指向版本已在遠端分支可取得；PR 尚未合併，未宣稱部署完成。
+
+先合併網站 PR，再合併 mono 指標 PR。若網站採 squash 或 rebase 合併使 main 的 commit 改變，合併 mono 前先把指標更新為網站實際合併版本，再核對差異。mono 本輪只更新 submodule 與此 Plan，不改規則。
+
+指標發布前獨立複查通過：遠端版本可取得、網站工作樹乾淨、兩筆帶入變更與描述相符；FORMULATION 與前述憲法十二條逐條複查皆沒有違反。網站 PR 的 GitHub build 已通過，release 尚未執行。
