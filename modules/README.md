@@ -5,6 +5,7 @@
 | Submodule | 用途 |
 |---|---|
 | [ai-native-founders-tw-web](ai-native-founders-tw-web/README.md) | 組織網站的實作、測試與建置 |
+| [startup-cami-skills](startup-cami-skills/README.md) | Cami Startup Canvas 的三支 skills、本地 YAML runtime 與雙語 Canvas |
 
 在 mono 根目錄執行 `git submodule update --init --recursive` 可依記錄的版本初始化 submodules。修改與提交的要求依 [AGENTS](../AGENTS.md)。
 
