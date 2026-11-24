@@ -9,7 +9,7 @@
 ### 先 clone，認識這個組織
 
 ```text
-請 clone https://github.com/AI-Native-Founders-TW/ai-native-founders-tw-mono.git，並進入 repo；如果本機已有這份 repo，就使用既有目錄，保留未提交的修改。
+請 clone https://github.com/AI-Native-Global-Founders-Speedrun-TW/ai-native-founders-tw-mono.git，並進入 repo；如果本機已有這份 repo，就使用既有目錄，保留未提交的修改。
 
 先讀 AGENTS.md、FORMULATION.md、specs/00-願景和問題/vision.md 與 specs/01-制度/憲法.md，再看 members/README.md 及 specs/02-R&R/README.md。
 請簡單說明這個組織想做什麼、我可以如何加入及參與，並問我想從哪件事開始。現行規則以 specs 為準，不把歷史討論、候選人名或規格文件當成已完成的任命與平台設定。
@@ -54,9 +54,9 @@
 ```text
 我想參與的方向是：〈感興趣的事情、可以幫忙的部分與可投入時間〉。
 
-請讀 specs/02-R&R/README.md、相關 Role 與 members/r-and-r-assignment.md，幫我找到適合的分工、現任聯繫者及相關 SOP。人選待確認或職位空缺時請如實說明。
+請讀 specs/02-R&R/README.md、相關 Role、members/r-and-r-assignment.yml，幫我找到適合的分工、現任聯繫者及相關 SOP。人選待確認或職位空缺時請如實說明。
 
-若我要調整 Contributors，依 specs/03-SOP/憲政/ 中的加入退出或調整 Contributors 分工 SOP，同步準備我的兩表資料。若我想承接具體工作，先找既有 Issue 或 Plan，幫我整理可接續的工作與完成條件，再由我確認承接範圍。
+若我要調整 Contributors，依 specs/03-SOP/憲政/ 中的加入退出或調整 Contributors 分工 SOP，準備我的 assignment 修改。若我想承接具體工作，先找既有 Issue 或 Plan，幫我整理可接續的工作與完成條件，再由我確認承接範圍。
 ```
 
 ### 我有提議，想找人一起討論
@@ -122,5 +122,7 @@
 | [Specs](specs/README.md) | 現行規格及各 package |
 | [Plans](plans/README.md) | 進行中的計畫與變更脈絡 |
 | [Logs](logs/) | 累積的會議及執行記錄 |
+| [常見專有名詞表](dictionary/常見專有名詞表.md) | 已確認的專有名詞與逐字稿正名依據 |
+| [Council 名單](members/r-and-r-assignment.yml) | 依制度核對有效任職後，將同一人的 leader 去重為 Council |
 | [Members](members/README.md) | 自介提交、成員資料與分工入口 |
 | [Modules](modules/README.md) | Git submodules 與本機操作入口 |
