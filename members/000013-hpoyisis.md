@@ -1,10 +1,10 @@
 # 葉柏逸 Poyisis
 
-![葉柏逸 Poyisis的真人照片](<assets/pending-hpoyisis-葉柏逸 Poyisis-半身照.jpg>)
+![葉柏逸 Poyisis的真人照片](<assets/000013-葉柏逸 Poyisis-半身照.jpg>)
 
 ## 成員資料
 
-Member ID：待配置
+Member ID：000013
 GitHub：HPoyisis
 
 <!-- Discord ID 選填；不知道或不想公開時可保留 null 或刪除此區塊。已知時填加引號的數字字串，不填暱稱。 -->
