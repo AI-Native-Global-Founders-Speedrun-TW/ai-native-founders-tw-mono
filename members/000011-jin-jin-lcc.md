@@ -1,10 +1,10 @@
 # Jin
 
-![Jin的真人照片](assets/pending-jin-jin-lcc-Jin-半身照.jpg)
+![Jin的真人照片](assets/000011-Jin-半身照.jpg)
 
 ## 成員資料
 
-Member ID：待配置
+Member ID：000011
 GitHub：Jin-Jin-LCC
 
 ```yaml
