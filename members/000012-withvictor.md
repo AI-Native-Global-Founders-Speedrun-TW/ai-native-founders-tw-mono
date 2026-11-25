@@ -1,10 +1,10 @@
 # Victor
 
-![Victor的真人照片](assets/pending-withvictor-Victor-半身照.jpg)
+![Victor的真人照片](assets/000012-Victor-半身照.jpg)
 
 ## 成員資料
 
-Member ID：待配置
+Member ID：000012
 GitHub：withvictor
 
 ```yaml
