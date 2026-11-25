@@ -1,10 +1,10 @@
 # Jasmine Ow
 
-![Jasmine Ow的真人照片](<assets/pending-jasmineow-Jasmine Ow-半身照.jpg>)
+![Jasmine Ow的真人照片](<assets/000009-Jasmine Ow-半身照.jpg>)
 
 ## 成員資料
 
-Member ID：待配置
+Member ID：000009
 GitHub：Jasmineow
 
 ```yaml
