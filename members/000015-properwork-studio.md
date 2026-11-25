@@ -1,10 +1,10 @@
 # 搞高
 
-![搞高的真人照片](assets/pending-properwork-studio-搞高-半身照.jpg)
+![搞高的真人照片](assets/000015-搞高-半身照.jpg)
 
 ## 成員資料
 
-Member ID：待配置
+Member ID：000015
 GitHub：properwork-studio
 
 ```yaml
